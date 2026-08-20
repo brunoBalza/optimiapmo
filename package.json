@@ -1,0 +1,31 @@
+{
+  "name": "optimia-pmo-landing",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "description": "Enterprise Web Application & Mathematical ROI Simulator for OPTIMIA PMO",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "chart.js": "^4.4.1"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.4.18",
+    "postcss": "^8.4.35",
+    "tailwindcss": "^3.4.1",
+    "vite": "^5.1.4"
+  },
+  "keywords": [
+    "pmo",
+    "project-management",
+    "earned-value-management",
+    "bim",
+    "real-estate",
+    "roi-simulator"
+  ],
+  "author": "OPTIMIA PMO",
+  "license": "Proprietary"
+}
