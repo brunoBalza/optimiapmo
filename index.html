@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>OPTIMIA PMO | Gerenciamiento Eficiente de Proyectos Inmobiliarios & Ingeniería de Procesos</title>
+    <title>OPTIMIA PMO | Gerenciamiento Eficiente de Proyectos Inmobiliarios &amp; Ingeniería de Procesos</title>
     <meta name="description" content="Maximización del ROI y previsibilidad operativa en obras e ingeniería mediante control matemático, BIM e indicadores EVM.">
     <link rel="icon" type="image/svg+xml" href="/public/favicon.svg">
     
@@ -32,6 +32,7 @@
                         terracotta: '#C3582B',
                         emeraldGreen: '#3F6352',
                         cementGrey: '#A5A692',
+                        beige: '#E1C3A5',
                         mintTurquoise: '#41BFB3',
                         amberYellow: '#EEBC21'
                     },
@@ -51,53 +52,41 @@
 <body class="bg-white text-charcoalGrey font-sans antialiased selection:bg-terracotta selection:text-white">
 
     <!-- NAVIGATION HEADER -->
-    <header class="sticky top-0 z-50 bg-white/95 backdrop-blur-md border-b border-cementGrey/20 transition-all duration-300">
+    <header class="sticky top-0 z-50 bg-white border-b border-cementGrey/30 transition-all duration-300">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex items-center justify-between h-20">
                 
-                <!-- Logo & Brand Isotype -->
-                <a href="#" class="flex items-center gap-3 group">
-                    <div class="relative w-11 h-11 flex items-center justify-center transition-transform group-hover:scale-105">
-                        <svg viewBox="0 0 100 100" class="w-full h-full drop-shadow-sm">
-                            <path d="M 50 12 A 38 38 0 0 1 85 38" fill="none" stroke="#41495E" stroke-width="9" stroke-linecap="round"/>
-                            <polygon points="88,43 78,35 88,31" fill="#41495E"/>
-                            
-                            <path d="M 85 58 A 38 38 0 0 1 35 85" fill="none" stroke="#41BFB3" stroke-width="9" stroke-linecap="round"/>
-                            <polygon points="29,85 37,75 41,85" fill="#41BFB3"/>
-                            
-                            <path d="M 20 72 A 38 38 0 0 1 32 18" fill="none" stroke="#EEBC21" stroke-width="9" stroke-linecap="round"/>
-                            <polygon points="37,14 31,24 23,17" fill="#EEBC21"/>
-
-                            <circle cx="50" cy="50" r="5" fill="#41495E"/>
-                        </svg>
-                    </div>
+                <!-- Logo Oficial OPTIMIA PMO -->
+                <a href="#" class="flex items-center gap-3.5 group">
+                    <img src="https://i.imgur.com/U6H2Ipl.png" alt="OPTIMIA PMO Logo" class="h-12 w-auto object-contain transition-transform group-hover:scale-105 rounded">
                     <div class="flex flex-col">
                         <span class="text-xl font-extrabold tracking-tight text-slateGrey leading-none font-mono">OPTIMIA<span class="text-terracotta">.</span>PMO</span>
-                        <span class="text-[10px] font-semibold tracking-widest text-cementGrey uppercase mt-1">Eng &amp; Project Control</span>
+                        <span class="text-[9px] font-bold tracking-widest text-cementGrey uppercase mt-1">Gerenciamiento de Proyectos &amp; Ingeniería de Procesos</span>
                     </div>
                 </a>
 
                 <!-- Desktop Navigation Links -->
-                <nav class="hidden md:flex items-center gap-7 text-sm font-medium text-slateGrey">
+                <nav class="hidden md:flex items-center gap-8 text-xs font-mono font-semibold uppercase tracking-wider text-slateGrey">
                     <a href="#desafio" class="hover:text-terracotta transition-colors py-1">El Desafío</a>
                     <a href="#propuesta" class="hover:text-terracotta transition-colors py-1">Propuesta</a>
+                    <a href="#comparativo" class="hover:text-terracotta transition-colors py-1">Diferenciales</a>
                     <a href="#servicios" class="hover:text-terracotta transition-colors py-1">Servicios</a>
                     <a href="#simulador" class="hover:text-terracotta transition-colors py-1">Simulador ROI</a>
                     <a href="#metodologia" class="hover:text-terracotta transition-colors py-1">Metodología</a>
                     <a href="#contacto" class="hover:text-terracotta transition-colors py-1">Contacto</a>
                 </nav>
 
-                <!-- Header CTA Button -->
+                <!-- Header CTA Button (Terracotta Accent) -->
                 <div class="hidden lg:flex items-center">
-                    <a href="#contacto" class="inline-flex items-center gap-2 bg-terracotta hover:bg-[#b04b21] text-white px-5 py-2.5 rounded-lg text-sm font-semibold shadow-sm hover:shadow-md transition-all transform hover:-translate-y-0.5">
+                    <a href="#contacto" class="inline-flex items-center gap-2 bg-terracotta hover:bg-[#a84920] text-white px-5 py-2.5 rounded-md text-xs font-mono font-bold uppercase tracking-wider shadow-sm transition-all">
                         <i class="fa-solid fa-calculator"></i>
-                        <span>Auditoría de Previsibilidad</span>
+                        <span>Auditoría de proyecto - factibilidad</span>
                     </a>
                 </div>
 
                 <!-- Mobile Hamburger Button -->
                 <div class="md:hidden flex items-center">
-                    <button id="mobile-menu-btn" type="button" class="text-slateGrey hover:text-terracotta focus:outline-none p-2 rounded-md" aria-label="Abrir Menú">
+                    <button id="mobile-menu-btn" type="button" class="text-slateGrey hover:text-terracotta focus:outline-none p-2" aria-label="Abrir Menú">
                         <i id="menu-icon-open" class="fa-solid fa-bars text-2xl"></i>
                         <i id="menu-icon-close" class="fa-solid fa-xmark text-2xl hidden"></i>
                     </button>
@@ -109,65 +98,68 @@
         <div id="mobile-menu" class="hidden md:hidden bg-white border-b border-cementGrey/30 px-4 pt-3 pb-6 space-y-3">
             <a href="#desafio" class="mobile-link block px-3 py-2 rounded-md text-base font-medium text-slateGrey hover:bg-slate-50 hover:text-terracotta">El Desafío</a>
             <a href="#propuesta" class="mobile-link block px-3 py-2 rounded-md text-base font-medium text-slateGrey hover:bg-slate-50 hover:text-terracotta">Propuesta de Valor</a>
+            <a href="#comparativo" class="mobile-link block px-3 py-2 rounded-md text-base font-medium text-slateGrey hover:bg-slate-50 hover:text-terracotta">Diferenciales</a>
             <a href="#servicios" class="mobile-link block px-3 py-2 rounded-md text-base font-medium text-slateGrey hover:bg-slate-50 hover:text-terracotta">Servicios</a>
             <a href="#simulador" class="mobile-link block px-3 py-2 rounded-md text-base font-medium text-slateGrey hover:bg-slate-50 hover:text-terracotta">Simulador ROI &amp; EVM</a>
             <a href="#metodologia" class="mobile-link block px-3 py-2 rounded-md text-base font-medium text-slateGrey hover:bg-slate-50 hover:text-terracotta">Metodología</a>
             <a href="#contacto" class="mobile-link block px-3 py-2 rounded-md text-base font-medium text-slateGrey hover:bg-slate-50 hover:text-terracotta">Contacto</a>
-            <a href="#contacto" class="mobile-link block w-full text-center bg-terracotta text-white px-4 py-2.5 rounded-lg font-semibold mt-4">Auditoría de Previsibilidad</a>
+            <a href="#contacto" class="mobile-link block w-full text-center bg-terracotta text-white px-4 py-2.5 rounded-lg font-semibold mt-4">Auditoría de proyecto - factibilidad</a>
         </div>
     </header>
 
     <!-- HERO SECTION -->
-    <section class="relative bg-white py-20 lg:py-28 overflow-hidden bg-grid-pattern border-b border-cementGrey/20">
+    <section class="relative bg-white py-20 lg:py-28 overflow-hidden bg-grid-pattern border-b border-cementGrey/30">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-            <div class="max-w-4xl mx-auto text-center">
+            <div class="max-w-4xl mx-auto text-center flex flex-col items-center">
                 
-                <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-slateGrey/5 border border-slateGrey/20 text-slateGrey text-xs font-mono font-semibold uppercase tracking-wider mb-8">
-                    <span class="w-2 h-2 rounded-full bg-emeraldGreen animate-pulse"></span>
-                    Engineered Project Management &amp; Process Control
+                <!-- Imagen Corporativa Oficial Centrada y Jerarquizada -->
+                <div class="mb-8 p-2 bg-white border border-cementGrey/30 rounded-xl shadow-md max-w-sm sm:max-w-md w-full">
+                    <img src="https://i.imgur.com/U6H2Ipl.png" alt="OPTIMIA PMO - Imagen Corporativa" class="w-full h-auto object-contain rounded-lg">
                 </div>
 
-                <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-slateGrey tracking-tight leading-[1.15] mb-6">
-                    OPTIMIA PMO: <span class="text-charcoalGrey">Gerenciamiento Eficiente de Proyectos Inmobiliarios</span> <span class="text-terracotta font-serif font-normal italic">&amp;</span> <span class="underline decoration-terracotta/40 decoration-wavy decoration-2">Ingeniería de Procesos</span>
+                <!-- Título Principal (Justo debajo de la imagen) -->
+                <h1 class="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-slateGrey tracking-tight leading-[1.2] mb-6">
+                    Eficiencia en Desarrollos Inmobiliarios - Sistematización de procesos
                 </h1>
 
-                <p class="text-lg sm:text-xl text-charcoalGrey/80 font-normal leading-relaxed mb-10 max-w-3xl mx-auto">
-                    Maximización del <strong class="text-slateGrey font-semibold">ROI</strong> y <strong class="text-slateGrey font-semibold">Previsibilidad Operativa</strong> en obra mediante control matemático riguroso, modelado BIM e indicadores EVM en tiempo real.
+                <!-- Promesa de Valor (Destacada visualmente en Terracota #C3582B) -->
+                <p class="text-xl sm:text-2xl font-bold text-terracotta leading-relaxed mb-10 max-w-3xl mx-auto">
+                    protegemos la rentabilidad de su proyecto inmobiliario
                 </p>
 
                 <!-- Hero Action Buttons -->
-                <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
-                    <a href="#simulador" class="w-full sm:w-auto inline-flex items-center justify-center gap-3 bg-terracotta hover:bg-[#b04b21] text-white px-8 py-4 rounded-xl text-base font-bold shadow-lg shadow-terracotta/20 transition-all hover:scale-[1.02] active:scale-[0.98]">
-                        <i class="fa-solid fa-chart-line text-lg"></i>
-                        <span>Simular ROI de tu Proyecto</span>
+                <div class="flex flex-col sm:flex-row items-center justify-center gap-4 w-full sm:w-auto">
+                    <a href="#contacto" class="w-full sm:w-auto inline-flex items-center justify-center gap-3 bg-terracotta hover:bg-[#a84920] text-white px-8 py-4 rounded-md text-xs font-mono font-bold uppercase tracking-wider shadow-sm transition-all">
+                        <i class="fa-solid fa-calculator text-sm"></i>
+                        <span>Auditoría de proyecto - factibilidad</span>
                     </a>
-                    <a href="#desafio" class="w-full sm:w-auto inline-flex items-center justify-center gap-2 bg-white hover:bg-slate-50 text-slateGrey border-2 border-slateGrey/20 px-7 py-4 rounded-xl text-base font-semibold transition-all">
-                        <i class="fa-solid fa-shield-halved text-emeraldGreen"></i>
-                        <span>Ver Diagnóstico Técnico</span>
+                    <a href="#simulador" class="w-full sm:w-auto inline-flex items-center justify-center gap-2 bg-white hover:bg-slate-50 text-slateGrey border border-slateGrey/40 hover:border-terracotta hover:text-terracotta px-7 py-4 rounded-md text-xs font-mono font-bold uppercase tracking-wider transition-all">
+                        <i class="fa-solid fa-chart-line text-emeraldGreen"></i>
+                        <span>Simular ROI de tu Proyecto</span>
                     </a>
                 </div>
 
-                <!-- Micro Technical KPI Metrics -->
-                <div class="grid grid-cols-2 md:grid-cols-4 gap-4 mt-16 text-left max-w-4xl mx-auto">
-                    <div class="bg-white/80 backdrop-blur-sm p-4 rounded-xl border border-cementGrey/30 shadow-sm">
-                        <div class="text-xs font-mono text-slateGrey/70 uppercase">Costo vs Presupuesto</div>
+                <!-- Technical KPI Metrics Cards (Pure White with Cement/Beige Borders) -->
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-4 mt-16 text-left max-w-4xl mx-auto w-full">
+                    <div class="bg-white p-5 rounded-none border-l-2 border-t border-r border-b border-cementGrey/30 hover:border-l-terracotta transition-colors">
+                        <div class="text-[11px] font-mono text-cementGrey uppercase font-bold tracking-wider">Costo vs Presupuesto</div>
                         <div class="text-2xl font-extrabold text-slateGrey font-mono mt-1">CPI 0.99</div>
-                        <div class="text-xs text-emeraldGreen font-medium mt-0.5"><i class="fa-solid fa-check me-1"></i>Alineación Óptima</div>
+                        <div class="text-xs text-emeraldGreen font-mono font-semibold mt-1"><i class="fa-solid fa-check me-1"></i>Alineación Óptima</div>
                     </div>
-                    <div class="bg-white/80 backdrop-blur-sm p-4 rounded-xl border border-cementGrey/30 shadow-sm">
-                        <div class="text-xs font-mono text-slateGrey/70 uppercase">Plazo Cronograma</div>
+                    <div class="bg-white p-5 rounded-none border-l-2 border-t border-r border-b border-cementGrey/30 hover:border-l-emeraldGreen transition-colors">
+                        <div class="text-[11px] font-mono text-cementGrey uppercase font-bold tracking-wider">Plazo Cronograma</div>
                         <div class="text-2xl font-extrabold text-slateGrey font-mono mt-1">SPI 1.01</div>
-                        <div class="text-xs text-emeraldGreen font-medium mt-0.5"><i class="fa-solid fa-clock me-1"></i>Sin Descalces</div>
+                        <div class="text-xs text-emeraldGreen font-mono font-semibold mt-1"><i class="fa-solid fa-clock me-1"></i>Sin Descalces</div>
                     </div>
-                    <div class="bg-white/80 backdrop-blur-sm p-4 rounded-xl border border-cementGrey/30 shadow-sm">
-                        <div class="text-xs font-mono text-slateGrey/70 uppercase">Reducción de Reprocesos</div>
+                    <div class="bg-white p-5 rounded-none border-l-2 border-t border-r border-b border-cementGrey/30 hover:border-l-mintTurquoise transition-colors">
+                        <div class="text-[11px] font-mono text-cementGrey uppercase font-bold tracking-wider">Reducción Reprocesos</div>
                         <div class="text-2xl font-extrabold text-mintTurquoise font-mono mt-1">BIM 5D</div>
-                        <div class="text-xs text-slateGrey font-medium mt-0.5">Clash Detection Cero</div>
+                        <div class="text-xs text-slateGrey font-mono font-medium mt-1">Clash Detection Cero</div>
                     </div>
-                    <div class="bg-white/80 backdrop-blur-sm p-4 rounded-xl border border-cementGrey/30 shadow-sm">
-                        <div class="text-xs font-mono text-slateGrey/70 uppercase">Mitigación de Riesgo</div>
+                    <div class="bg-white p-5 rounded-none border-l-2 border-t border-r border-b border-cementGrey/30 hover:border-l-terracotta transition-colors">
+                        <div class="text-[11px] font-mono text-cementGrey uppercase font-bold tracking-wider">Mitigación Riesgo</div>
                         <div class="text-2xl font-extrabold text-terracotta font-mono mt-1">-90%</div>
-                        <div class="text-xs text-slateGrey font-medium mt-0.5">Sobrecostos de Obra</div>
+                        <div class="text-xs text-slateGrey font-mono font-medium mt-1">Sobrecostos Obra</div>
                     </div>
                 </div>
 
@@ -175,61 +167,61 @@
         </div>
     </section>
 
-    <!-- SECCIÓN EL DESAFÍO -->
-    <section id="desafio" class="py-20 bg-slateGrey text-white relative overflow-hidden bg-grid-dense">
+    <!-- SECCIÓN EL DESAFÍO (Strict 100% Pure White Background) -->
+    <section id="desafio" class="py-28 lg:py-36 bg-white text-charcoalGrey relative overflow-hidden bg-grid-pattern border-b border-cementGrey/30">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
             
-            <div class="text-center max-w-3xl mx-auto mb-16">
-                <span class="inline-block text-terracotta font-mono font-bold text-xs uppercase tracking-widest bg-white/10 px-3 py-1 rounded mb-3">Diagnóstico de la Industria</span>
-                <h2 class="text-3xl sm:text-4xl font-extrabold tracking-tight">"La Improvisación Liquida la Rentabilidad"</h2>
-                <p class="text-white/70 text-base sm:text-lg mt-4">
+            <div class="text-center max-w-3xl mx-auto mb-20">
+                <span class="inline-block text-terracotta font-mono font-bold text-xs uppercase tracking-widest bg-white px-3.5 py-1 rounded-none border border-terracotta/40 mb-3">Diagnóstico de la Industria // DE01</span>
+                <h2 class="text-3xl sm:text-4xl font-extrabold text-slateGrey tracking-tight">"La Improvisación Liquida la Rentabilidad"</h2>
+                <p class="text-charcoalGrey/80 text-base sm:text-lg mt-4 leading-relaxed">
                     Sin una oficina de gestión de proyectos (PMO) con base matemática, las desviaciones imprevistas destruyen el margen del desarrollador e inversor.
                 </p>
             </div>
 
-            <!-- Pain Points Cards Grid -->
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-14">
+            <!-- Pain Points Cards Grid (Pure White Containers, Thin Cement/Beige Borders) -->
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16">
                 
                 <!-- Card 1 -->
-                <div class="bg-[#363D4F] p-8 rounded-2xl border border-white/10 shadow-xl hover:border-terracotta/50 transition-all group">
-                    <div class="w-14 h-14 rounded-xl bg-terracotta/20 text-terracotta flex items-center justify-center text-2xl mb-6 group-hover:scale-110 transition-transform">
+                <div class="bg-white p-8 rounded-none border-l-2 border-t border-r border-b border-cementGrey/40 hover:border-l-terracotta transition-all group">
+                    <div class="w-12 h-12 rounded-none bg-white text-terracotta border border-terracotta/40 flex items-center justify-center text-xl mb-6 group-hover:scale-105 transition-transform">
                         <i class="fa-solid fa-arrow-trend-down"></i>
                     </div>
-                    <h3 class="text-xl font-bold text-white mb-3">Descalce Financiero</h3>
-                    <p class="text-white/70 text-sm leading-relaxed mb-4">
+                    <h3 class="text-xl font-bold text-slateGrey mb-3">Descalce Financiero</h3>
+                    <p class="text-charcoalGrey/90 text-sm leading-relaxed mb-6">
                         Compras desfasadas de insumos clave, falta de acopio estratégico e inflación no controlada que erosiona el flujo de caja planeado.
                     </p>
-                    <div class="flex items-center gap-2 text-xs font-mono text-terracotta bg-terracotta/10 px-3 py-1.5 rounded border border-terracotta/20">
+                    <div class="flex items-center gap-2 text-xs font-mono text-terracotta bg-white px-3 py-1.5 border border-terracotta/30">
                         <i class="fa-solid fa-triangle-exclamation"></i>
                         <span>Desviaciones típicas del 15% al 35%</span>
                     </div>
                 </div>
 
                 <!-- Card 2 -->
-                <div class="bg-[#363D4F] p-8 rounded-2xl border border-white/10 shadow-xl hover:border-amberYellow/50 transition-all group">
-                    <div class="w-14 h-14 rounded-xl bg-amberYellow/20 text-amberYellow flex items-center justify-center text-2xl mb-6 group-hover:scale-110 transition-transform">
+                <div class="bg-white p-8 rounded-none border-l-2 border-t border-r border-b border-cementGrey/40 hover:border-l-amberYellow transition-all group">
+                    <div class="w-12 h-12 rounded-none bg-white text-amberYellow border border-amberYellow/40 flex items-center justify-center text-xl mb-6 group-hover:scale-105 transition-transform">
                         <i class="fa-solid fa-hourglass-half"></i>
                     </div>
-                    <h3 class="text-xl font-bold text-white mb-3">Distorsión de Plazos</h3>
-                    <p class="text-white/70 text-sm leading-relaxed mb-4">
+                    <h3 class="text-xl font-bold text-slateGrey mb-3">Distorsión de Plazos</h3>
+                    <p class="text-charcoalGrey/90 text-sm leading-relaxed mb-6">
                         Incumplimiento sistemático de hitos de entrega, retrasos en contratistas y reprocesos por interferencias no detectadas en diseño.
                     </p>
-                    <div class="flex items-center gap-2 text-xs font-mono text-amberYellow bg-amberYellow/10 px-3 py-1.5 rounded border border-amberYellow/20">
+                    <div class="flex items-center gap-2 text-xs font-mono text-amberYellow bg-white px-3 py-1.5 border border-amberYellow/30">
                         <i class="fa-solid fa-circle-exclamation"></i>
                         <span>Demoras medias de 4 a 8 meses</span>
                     </div>
                 </div>
 
                 <!-- Card 3 -->
-                <div class="bg-[#363D4F] p-8 rounded-2xl border border-white/10 shadow-xl hover:border-mintTurquoise/50 transition-all group">
-                    <div class="w-14 h-14 rounded-xl bg-mintTurquoise/20 text-mintTurquoise flex items-center justify-center text-2xl mb-6 group-hover:scale-110 transition-transform">
+                <div class="bg-white p-8 rounded-none border-l-2 border-t border-r border-b border-cementGrey/40 hover:border-l-mintTurquoise transition-all group">
+                    <div class="w-12 h-12 rounded-none bg-white text-mintTurquoise border border-mintTurquoise/40 flex items-center justify-center text-xl mb-6 group-hover:scale-105 transition-transform">
                         <i class="fa-solid fa-eye-slash"></i>
                     </div>
-                    <h3 class="text-xl font-bold text-white mb-3">Opacidad de Información</h3>
-                    <p class="text-white/70 text-sm leading-relaxed mb-4">
+                    <h3 class="text-xl font-bold text-slateGrey mb-3">Opacidad de Información</h3>
+                    <p class="text-charcoalGrey/90 text-sm leading-relaxed mb-6">
                         Falta de reportes ejecutivos consolidados para inversores. Reportes extemporáneos basados en intuiciones y no en métricas EVM objetivas.
                     </p>
-                    <div class="flex items-center gap-2 text-xs font-mono text-mintTurquoise bg-mintTurquoise/10 px-3 py-1.5 rounded border border-mintTurquoise/20">
+                    <div class="flex items-center gap-2 text-xs font-mono text-mintTurquoise bg-white px-3 py-1.5 border border-mintTurquoise/30">
                         <i class="fa-solid fa-database"></i>
                         <span>Decisiones a ciegas en obra</span>
                     </div>
@@ -237,18 +229,18 @@
 
             </div>
 
-            <!-- Solution Banner -->
-            <div class="bg-gradient-to-r from-emeraldGreen to-[#2e473b] p-8 rounded-2xl border border-emeraldGreen/40 shadow-2xl flex flex-col md:flex-row items-center justify-between gap-6">
+            <!-- Solution Banner (Pure White with Emerald Green Accent Border) -->
+            <div class="bg-white p-8 rounded-none border-l-4 border-emeraldGreen border-t border-r border-b border-cementGrey/40 flex flex-col md:flex-row items-center justify-between gap-6">
                 <div class="flex items-center gap-5">
-                    <div class="w-12 h-12 rounded-full bg-white/10 flex items-center justify-center text-white text-2xl shrink-0">
+                    <div class="w-12 h-12 rounded-none bg-white text-emeraldGreen border border-emeraldGreen/40 flex items-center justify-center text-xl shrink-0">
                         <i class="fa-solid fa-calculator"></i>
                     </div>
                     <div>
-                        <h4 class="text-lg font-bold text-white">La Solución OPTIMIA PMO</h4>
-                        <p class="text-white/80 text-sm mt-0.5">Sustituir la improvisación por control matemático, modelado tridimensional e ingeniería de previsibilidad.</p>
+                        <h4 class="text-lg font-bold text-slateGrey">La Solución OPTIMIA PMO</h4>
+                        <p class="text-charcoalGrey/80 text-sm mt-0.5">Sustituir la improvisación por control matemático, modelado tridimensional e ingeniería de previsibilidad.</p>
                     </div>
                 </div>
-                <a href="#propuesta" class="bg-white text-slateGrey hover:bg-slate-100 font-bold text-sm px-6 py-3 rounded-lg shrink-0 transition-colors">
+                <a href="#propuesta" class="bg-terracotta hover:bg-[#a84920] text-white font-mono font-bold text-xs uppercase tracking-wider px-6 py-3 rounded-md shrink-0 transition-colors">
                     Descubrir Nuestra Propuesta
                 </a>
             </div>
@@ -256,24 +248,24 @@
         </div>
     </section>
 
-    <!-- SECCIÓN PROPUESTA DE VALOR (TABS INTERACTIVAS) -->
-    <section id="propuesta" class="py-20 bg-slate-50 border-b border-cementGrey/20">
+    <!-- SECCIÓN PROPUESTA DE VALOR (Strict 100% Pure White Background) -->
+    <section id="propuesta" class="py-28 lg:py-36 bg-white border-b border-cementGrey/30 relative bg-grid-pattern">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             
-            <div class="text-center max-w-3xl mx-auto mb-12">
-                <span class="text-emeraldGreen font-mono font-bold text-xs uppercase tracking-widest bg-emeraldGreen/10 px-3 py-1 rounded">Soluciones Adaptadas</span>
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <span class="text-emeraldGreen font-mono font-bold text-xs uppercase tracking-widest border border-emeraldGreen/30 px-3.5 py-1 bg-white">Soluciones Adaptadas // PV02</span>
                 <h2 class="text-3xl sm:text-4xl font-extrabold text-slateGrey mt-3">Propuesta de Valor de Alto Impacto</h2>
-                <p class="text-charcoalGrey/70 text-base mt-2">Selecciona el perfil corporativo para explorar cómo garantizamos el control de tu proyecto.</p>
+                <p class="text-charcoalGrey/80 text-base mt-2">Selecciona el perfil corporativo para explorar cómo garantizamos el control de tu proyecto.</p>
             </div>
 
             <!-- Tabs Navigation Header -->
-            <div class="flex justify-center mb-10">
-                <div class="bg-white p-1.5 rounded-xl border border-cementGrey/30 shadow-sm inline-flex gap-2 max-w-2xl w-full">
-                    <button id="tab-btn-devs" onclick="switchTab('devs')" class="flex-1 py-3 px-4 rounded-lg font-semibold text-sm transition-all text-center flex items-center justify-center gap-2 bg-slateGrey text-white shadow-sm">
+            <div class="flex justify-center mb-12">
+                <div class="bg-white p-1 rounded-none border border-cementGrey/40 inline-flex gap-2 max-w-2xl w-full">
+                    <button id="tab-btn-devs" onclick="switchTab('devs')" class="flex-1 py-3 px-4 rounded-none font-mono font-bold text-xs uppercase tracking-wider transition-all text-center flex items-center justify-center gap-2 bg-slateGrey text-white shadow-sm border border-slateGrey">
                         <i class="fa-solid fa-city"></i>
                         <span>Para Desarrolladores e Inversores</span>
                     </button>
-                    <button id="tab-btn-pymes" onclick="switchTab('pymes')" class="flex-1 py-3 px-4 rounded-lg font-semibold text-sm transition-all text-center flex items-center justify-center gap-2 text-slateGrey hover:bg-slate-100">
+                    <button id="tab-btn-pymes" onclick="switchTab('pymes')" class="flex-1 py-3 px-4 rounded-none font-mono font-medium text-xs uppercase tracking-wider transition-all text-center flex items-center justify-center gap-2 text-slateGrey hover:text-terracotta bg-white border border-cementGrey/30">
                         <i class="fa-solid fa-helmet-safety"></i>
                         <span>Para Obras Privadas &amp; PyMEs</span>
                     </button>
@@ -284,33 +276,33 @@
             <div id="tab-content-devs" class="block transition-opacity duration-300">
                 <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
                     
-                    <div class="bg-white p-8 rounded-2xl border border-cementGrey/30 shadow-sm hover:shadow-md transition-shadow">
-                        <div class="w-12 h-12 rounded-xl bg-terracotta/10 text-terracotta flex items-center justify-center text-xl mb-6">
-                            <i class="fa-solid fa-chart-pie"></i>
+                    <div class="bg-white p-8 rounded-none border-l-2 border-t border-r border-b border-cementGrey/30 hover:border-l-terracotta transition-all">
+                        <div class="w-12 h-12 rounded-none bg-white text-terracotta border border-terracotta/30 flex items-center justify-center text-lg mb-6">
+                            <i class="fa-solid fa-chart-line"></i>
                         </div>
-                        <h3 class="text-lg font-bold text-slateGrey mb-3">Maximización de la TIR</h3>
-                        <p class="text-charcoalGrey/80 text-sm leading-relaxed">
-                            Protegemos la Tasa Interna de Retorno del fideicomiso inmobiliario acelerando los tiempos de ejecución y eliminando descalces de flujo financiero.
+                        <h3 class="text-lg font-bold text-slateGrey mb-3">Maximización de ROI</h3>
+                        <p class="text-charcoalGrey/90 text-sm leading-relaxed">
+                            La PMO elimina la incertidumbre y asegura el rendimiento financiero del proyecto inmobiliario controlando de forma estricta presupuestos, plazos y estándares de calidad.
                         </p>
                     </div>
 
-                    <div class="bg-white p-8 rounded-2xl border border-cementGrey/30 shadow-sm hover:shadow-md transition-shadow">
-                        <div class="w-12 h-12 rounded-xl bg-emeraldGreen/10 text-emeraldGreen flex items-center justify-center text-xl mb-6">
+                    <div class="bg-white p-8 rounded-none border-l-2 border-t border-r border-b border-cementGrey/30 hover:border-l-emeraldGreen transition-all">
+                        <div class="w-12 h-12 rounded-none bg-white text-emeraldGreen border border-emeraldGreen/30 flex items-center justify-center text-lg mb-6">
                             <i class="fa-solid fa-vault"></i>
                         </div>
                         <h3 class="text-lg font-bold text-slateGrey mb-3">Blindaje Presupuestario</h3>
-                        <p class="text-charcoalGrey/80 text-sm leading-relaxed">
-                            Matriz de riesgos con contingencias cuantificadas matemáticamente. Control de órdenes de cambio bajo estrictos comités de aprobación.
+                        <p class="text-charcoalGrey/90 text-sm leading-relaxed">
+                            Control matemático predictivo para detectar fugas de dinero y desvíos en tiempo real, permitiendo congelar la línea base del proyecto y resguardar el capital.
                         </p>
                     </div>
 
-                    <div class="bg-white p-8 rounded-2xl border border-cementGrey/30 shadow-sm hover:shadow-md transition-shadow">
-                        <div class="w-12 h-12 rounded-xl bg-mintTurquoise/10 text-mintTurquoise flex items-center justify-center text-xl mb-6">
-                            <i class="fa-solid fa-desktop"></i>
+                    <div class="bg-white p-8 rounded-none border-l-2 border-t border-r border-b border-cementGrey/30 hover:border-l-mintTurquoise transition-all">
+                        <div class="w-12 h-12 rounded-none bg-white text-mintTurquoise border border-mintTurquoise/30 flex items-center justify-center text-lg mb-6">
+                            <i class="fa-solid fa-chart-pie"></i>
                         </div>
-                        <h3 class="text-lg font-bold text-slateGrey mb-3">Reportabilidad Asincrónica</h3>
-                        <p class="text-charcoalGrey/80 text-sm leading-relaxed">
-                            Acceso a Dashboards ejecutivos en la nube con indicadores EVM actualizados sin necesidad de realizar visitas presenciales periódicas a obra.
+                        <h3 class="text-lg font-bold text-slateGrey mb-3">Dashboards KPI &amp; Reportes</h3>
+                        <p class="text-charcoalGrey/90 text-sm leading-relaxed">
+                            Reportabilidad asincrónica para socios e inversores mediante informes unificados "One-Page" que permiten auditar el capital sin necesidad de inspecciones presenciales a la obra.
                         </p>
                     </div>
 
@@ -321,32 +313,32 @@
             <div id="tab-content-pymes" class="hidden transition-opacity duration-300">
                 <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
                     
-                    <div class="bg-white p-8 rounded-2xl border border-cementGrey/30 shadow-sm hover:shadow-md transition-shadow">
-                        <div class="w-12 h-12 rounded-xl bg-mintTurquoise/10 text-mintTurquoise flex items-center justify-center text-xl mb-6">
+                    <div class="bg-white p-8 rounded-none border-l-2 border-t border-r border-b border-cementGrey/30 hover:border-l-mintTurquoise transition-all">
+                        <div class="w-12 h-12 rounded-none bg-white text-mintTurquoise border border-mintTurquoise/30 flex items-center justify-center text-lg mb-6">
                             <i class="fa-solid fa-cube"></i>
                         </div>
                         <h3 class="text-lg font-bold text-slateGrey mb-3">Previsibilidad Técnica BIM+IA</h3>
-                        <p class="text-charcoalGrey/80 text-sm leading-relaxed">
+                        <p class="text-charcoalGrey/90 text-sm leading-relaxed">
                             Simulación digital en 3D/4D previa a la construcción real para detectar colisiones entre estructuras e instalaciones antes de volcar hormigón.
                         </p>
                     </div>
 
-                    <div class="bg-white p-8 rounded-2xl border border-cementGrey/30 shadow-sm hover:shadow-md transition-shadow">
-                        <div class="w-12 h-12 rounded-xl bg-amberYellow/10 text-amberYellow flex items-center justify-center text-xl mb-6">
+                    <div class="bg-white p-8 rounded-none border-l-2 border-t border-r border-b border-cementGrey/30 hover:border-l-amberYellow transition-all">
+                        <div class="w-12 h-12 rounded-none bg-white text-amberYellow border border-amberYellow/30 flex items-center justify-center text-lg mb-6">
                             <i class="fa-solid fa-diagram-project"></i>
                         </div>
                         <h3 class="text-lg font-bold text-slateGrey mb-3">Lean Construction</h3>
-                        <p class="text-charcoalGrey/80 text-sm leading-relaxed">
+                        <p class="text-charcoalGrey/90 text-sm leading-relaxed">
                             Aplicación del sistema Last Planner (LPS) para optimizar el flujo diario en obra, reduciendo los tiempos muertos de cuadrillas y equipos.
                         </p>
                     </div>
 
-                    <div class="bg-white p-8 rounded-2xl border border-cementGrey/30 shadow-sm hover:shadow-md transition-shadow">
-                        <div class="w-12 h-12 rounded-xl bg-slateGrey/10 text-slateGrey flex items-center justify-center text-xl mb-6">
+                    <div class="bg-white p-8 rounded-none border-l-2 border-t border-r border-b border-cementGrey/30 hover:border-l-slateGrey transition-all">
+                        <div class="w-12 h-12 rounded-none bg-white text-slateGrey border border-slateGrey/30 flex items-center justify-center text-lg mb-6">
                             <i class="fa-solid fa-file-contract"></i>
                         </div>
                         <h3 class="text-lg font-bold text-slateGrey mb-3">Control de Contratistas</h3>
-                        <p class="text-charcoalGrey/80 text-sm leading-relaxed">
+                        <p class="text-charcoalGrey/90 text-sm leading-relaxed">
                             Certificación rigurosa de avances físicos de obra mediante auditorías de campo para abonar exclusivamente el trabajo correctamente ejecutado.
                         </p>
                     </div>
@@ -357,92 +349,85 @@
         </div>
     </section>
 
-    <!-- SECCIÓN PORTAFOLIO DE SERVICIOS -->
-    <section id="servicios" class="py-20 bg-white border-b border-cementGrey/20">
+    <!-- SECCIÓN CUADRO COMPARATIVO DE DIFERENCIALES (Strict 100% Pure White Background) -->
+    <section id="comparativo" class="py-24 lg:py-32 bg-white border-b border-cementGrey/30 relative bg-grid-pattern">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             
-            <div class="flex flex-col md:flex-row md:items-end justify-between mb-16">
-                <div>
-                    <span class="text-slateGrey font-mono font-bold text-xs uppercase tracking-widest bg-slate-100 px-3 py-1 rounded">Especialidades</span>
-                    <h2 class="text-3xl sm:text-4xl font-extrabold text-slateGrey mt-3">Portafolio de Servicios PMO</h2>
-                </div>
-                <p class="text-charcoalGrey/70 text-base max-w-md mt-4 md:mt-0">
-                    Soluciones integrales de ingeniería aplicables desde la concepción del máster plan hasta el cierre operativo.
-                </p>
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <span class="text-terracotta font-mono font-bold text-xs uppercase tracking-widest border border-terracotta/40 px-3.5 py-1 bg-white">Diferenciales // CC03</span>
+                <h2 class="text-3xl sm:text-4xl font-extrabold text-slateGrey mt-3">Cuadro Comparativo de Diferenciales</h2>
+                <p class="text-charcoalGrey/80 text-base mt-2">Contraste directo entre la práctica tradicional sin control y el estándar predictivo OPTIMIA PMO.</p>
             </div>
 
-            <!-- 4 Service Cards Grid -->
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-auto">
                 
-                <!-- Card 1: Amber Border -->
-                <div class="bg-white p-6 rounded-xl border-l-4 border-amberYellow border-t border-r border-b border-cementGrey/25 shadow-sm hover:shadow-md transition-all flex flex-col justify-between">
+                <!-- Columna 1: Gestión Tradicional -->
+                <div class="bg-white p-8 rounded-none border-l-4 border-terracotta border-t border-r border-b border-cementGrey/40 shadow-sm flex flex-col justify-between">
                     <div>
-                        <div class="flex items-center justify-between mb-4">
-                            <span class="text-xs font-mono font-bold text-amberYellow bg-amberYellow/10 px-2.5 py-1 rounded">Fase 0 a Punch List</span>
-                            <i class="fa-solid fa-compass-drafting text-amberYellow text-xl"></i>
+                        <div class="flex items-center gap-3 mb-6 pb-4 border-b border-cementGrey/20">
+                            <div class="w-10 h-10 rounded-none bg-terracotta/10 text-terracotta border border-terracotta/30 flex items-center justify-center text-lg">
+                                <i class="fa-solid fa-triangle-exclamation"></i>
+                            </div>
+                            <div>
+                                <span class="text-[10px] font-mono font-bold text-terracotta uppercase tracking-wider block">Modelo Convencional</span>
+                                <h3 class="text-xl font-extrabold text-slateGrey">Gestión Tradicional</h3>
+                            </div>
                         </div>
-                        <h3 class="text-lg font-bold text-slateGrey mb-2">Gerenciamiento PMO Integral</h3>
-                        <p class="text-charcoalGrey/80 text-sm leading-relaxed">
-                            Liderazgo técnico y económico continuo. Control de plazos, costos, calidad, licitaciones de contratistas e inspección técnica de obra.
-                        </p>
+
+                        <ul class="space-y-4 text-sm text-charcoalGrey/90">
+                            <li class="flex items-start gap-3">
+                                <i class="fa-solid fa-xmark text-terracotta text-base mt-0.5 shrink-0"></i>
+                                <span><strong>Sobrecostos por compras fuera de término</strong> debido a falta de acopio estratégico y fallas en el abastecimiento.</span>
+                            </li>
+                            <li class="flex items-start gap-3">
+                                <i class="fa-solid fa-xmark text-terracotta text-base mt-0.5 shrink-0"></i>
+                                <span><strong>Retrasos de gremios en terreno</strong> provocados por interferencias operativas y falta de coordinación en tiempo real.</span>
+                            </li>
+                            <li class="flex items-start gap-3">
+                                <i class="fa-solid fa-xmark text-terracotta text-base mt-0.5 shrink-0"></i>
+                                <span><strong>Opacidad por falta de reportes periódicos</strong> confiables, derivando en decisiones basadas en intuiciones y no en datos.</span>
+                            </li>
+                        </ul>
                     </div>
-                    <div class="mt-6 pt-4 border-t border-slate-100 text-xs font-semibold text-slateGrey flex items-center justify-between">
-                        <span>Cobertura 360°</span>
-                        <i class="fa-solid fa-arrow-right"></i>
+                    <div class="mt-8 pt-4 border-t border-cementGrey/20 text-xs font-mono text-terracotta font-semibold">
+                        <i class="fa-solid fa-triangle-exclamation me-1"></i> Alto riesgo de descalces y erosión del margen del inversor
                     </div>
                 </div>
 
-                <!-- Card 2: Slate Grey Border -->
-                <div class="bg-white p-6 rounded-xl border-l-4 border-slateGrey border-t border-r border-b border-cementGrey/25 shadow-sm hover:shadow-md transition-all flex flex-col justify-between">
+                <!-- Columna 2: Solución Optimia PMO -->
+                <div class="bg-white p-8 rounded-none border-l-4 border-emeraldGreen border-t border-r border-b border-cementGrey/40 shadow-sm flex flex-col justify-between">
                     <div>
-                        <div class="flex items-center justify-between mb-4">
-                            <span class="text-xs font-mono font-bold text-slateGrey bg-slateGrey/10 px-2.5 py-1 rounded">Obras en marcha</span>
-                            <i class="fa-solid fa-magnifying-glass-dollar text-slateGrey text-xl"></i>
+                        <div class="flex items-center gap-3 mb-6 pb-4 border-b border-cementGrey/20">
+                            <div class="w-10 h-10 rounded-none bg-emeraldGreen/10 text-emeraldGreen border border-emeraldGreen/30 flex items-center justify-center text-lg">
+                                <i class="fa-solid fa-shield-halved"></i>
+                            </div>
+                            <div>
+                                <span class="text-[10px] font-mono font-bold text-emeraldGreen uppercase tracking-wider block">Estándar de Control</span>
+                                <h3 class="text-xl font-extrabold text-slateGrey">Solución Optimia PMO</h3>
+                            </div>
                         </div>
-                        <h3 class="text-lg font-bold text-slateGrey mb-2">Auditoría &amp; Sobrecostos</h3>
-                        <p class="text-charcoalGrey/80 text-sm leading-relaxed">
-                            Diagnóstico expreso de desviaciones en proyectos activos. Reestructuración de cronogramas y renegociación técnica de cómputos.
-                        </p>
-                    </div>
-                    <div class="mt-6 pt-4 border-t border-slate-100 text-xs font-semibold text-slateGrey flex items-center justify-between">
-                        <span>Diagnóstico en 14 días</span>
-                        <i class="fa-solid fa-arrow-right"></i>
-                    </div>
-                </div>
 
-                <!-- Card 3: Mint Turquoise Border -->
-                <div class="bg-white p-6 rounded-xl border-l-4 border-mintTurquoise border-t border-r border-b border-cementGrey/25 shadow-sm hover:shadow-md transition-all flex flex-col justify-between">
-                    <div>
-                        <div class="flex items-center justify-between mb-4">
-                            <span class="text-xs font-mono font-bold text-mintTurquoise bg-mintTurquoise/10 px-2.5 py-1 rounded">BIM 3D / 4D / 5D</span>
-                            <i class="fa-solid fa-cubes text-mintTurquoise text-xl"></i>
-                        </div>
-                        <h3 class="text-lg font-bold text-slateGrey mb-2">BIM &amp; Interferencias</h3>
-                        <p class="text-charcoalGrey/80 text-sm leading-relaxed">
-                            Modelado detallado de arquitectura, estructuras e instalaciones MEP para la detección temprana de interferencias y reprocesos.
-                        </p>
+                        <ul class="space-y-4 text-sm text-charcoalGrey/90">
+                            <li class="flex items-start gap-3">
+                                <i class="fa-solid fa-check text-emeraldGreen text-base mt-0.5 shrink-0"></i>
+                                <span><strong>Presupuesto protegido mediante líneas base</strong> estrictas que previenen desviaciones y sobrecostos.</span>
+                            </li>
+                            <li class="flex items-start gap-3">
+                                <i class="fa-solid fa-check text-emeraldGreen text-base mt-0.5 shrink-0"></i>
+                                <span><strong>Cumplimiento estricto del cronograma</strong> garantizado con seguimiento diario y mediciones de eficiencia SPI/CPI.</span>
+                            </li>
+                            <li class="flex items-start gap-3">
+                                <i class="fa-solid fa-check text-emeraldGreen text-base mt-0.5 shrink-0"></i>
+                                <span><strong>Análisis de puntos críticos y planes de contingencia documentados</strong> antes de que ocurran en obra.</span>
+                            </li>
+                            <li class="flex items-start gap-3">
+                                <i class="fa-solid fa-check text-emeraldGreen text-base mt-0.5 shrink-0"></i>
+                                <span><strong>Reportes ejecutivos transparentes</strong> y reportabilidad asincrónica 24/7 en formato unificado "One-Page".</span>
+                            </li>
+                        </ul>
                     </div>
-                    <div class="mt-6 pt-4 border-t border-slate-100 text-xs font-semibold text-slateGrey flex items-center justify-between">
-                        <span>Clash Detection</span>
-                        <i class="fa-solid fa-arrow-right"></i>
-                    </div>
-                </div>
-
-                <!-- Card 4: Emerald Green Border -->
-                <div class="bg-white p-6 rounded-xl border-l-4 border-emeraldGreen border-t border-r border-b border-cementGrey/25 shadow-sm hover:shadow-md transition-all flex flex-col justify-between">
-                    <div>
-                        <div class="flex items-center justify-between mb-4">
-                            <span class="text-xs font-mono font-bold text-emeraldGreen bg-emeraldGreen/10 px-2.5 py-1 rounded">Métricas Earned Value</span>
-                            <i class="fa-solid fa-chart-column text-emeraldGreen text-xl"></i>
-                        </div>
-                        <h3 class="text-lg font-bold text-slateGrey mb-2">Dashboards KPI EVM</h3>
-                        <p class="text-charcoalGrey/80 text-sm leading-relaxed">
-                            Tableros de control analíticos con métricas CPI/SPI en tiempo real para la toma de decisiones basada en datos matemáticos.
-                        </p>
-                    </div>
-                    <div class="mt-6 pt-4 border-t border-slate-100 text-xs font-semibold text-slateGrey flex items-center justify-between">
-                        <span>Reportes 24/7</span>
-                        <i class="fa-solid fa-arrow-right"></i>
+                    <div class="mt-8 pt-4 border-t border-cementGrey/20 text-xs font-mono text-emeraldGreen font-semibold">
+                        <i class="fa-solid fa-lock me-1"></i> Previsibilidad matemática y protección de la rentabilidad
                     </div>
                 </div>
 
@@ -451,14 +436,108 @@
         </div>
     </section>
 
-    <!-- ZONA INTERACTIVA: SIMULADOR DE ROI Y TABLERO EVM -->
-    <section id="simulador" class="py-20 bg-slate-900 text-white relative overflow-hidden bg-grid-dense">
+    <!-- SECCIÓN PORTAFOLIO DE SERVICIOS (Strict 100% Pure White Background) -->
+    <section id="servicios" class="py-28 lg:py-36 bg-white border-b border-cementGrey/30 relative bg-grid-pattern">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            
+            <div class="flex flex-col md:flex-row md:items-end justify-between mb-16">
+                <div>
+                    <span class="text-slateGrey font-mono font-bold text-xs uppercase tracking-widest border border-cementGrey/40 px-3.5 py-1 bg-white">Especialidades // SRV03</span>
+                    <h2 class="text-3xl sm:text-4xl font-extrabold text-slateGrey mt-3">Portafolio de Servicios PMO</h2>
+                </div>
+                <p class="text-charcoalGrey/80 text-base max-w-md mt-4 md:mt-0">
+                    Soluciones integrales de ingeniería aplicables desde la concepción del máster plan hasta el cierre operativo.
+                </p>
+            </div>
+
+            <!-- 4 Service Cards Grid (Pure White Containers, Thin Accent Borders) -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                
+                <!-- Card 1: Amber Border -->
+                <div class="bg-white p-7 rounded-none border-l-4 border-amberYellow border-t border-r border-b border-cementGrey/30 hover:border-r-cementGrey/60 transition-all flex flex-col justify-between">
+                    <div>
+                        <div class="flex items-center justify-between mb-4">
+                            <span class="text-[11px] font-mono font-bold text-amberYellow border border-amberYellow/30 px-2.5 py-1">Fase 0 a Punch List</span>
+                            <i class="fa-solid fa-compass-drafting text-amberYellow text-lg"></i>
+                        </div>
+                        <h3 class="text-lg font-bold text-slateGrey mb-2">Gerenciamiento PMO Integral</h3>
+                        <p class="text-charcoalGrey/90 text-sm leading-relaxed">
+                            Liderazgo técnico y económico continuo. Control de plazos, costos, calidad, licitaciones de contratistas e inspección técnica de obra.
+                        </p>
+                    </div>
+                    <div class="mt-6 pt-4 border-t border-cementGrey/20 text-xs font-mono font-semibold text-slateGrey flex items-center justify-between">
+                        <span>Cobertura 360°</span>
+                        <i class="fa-solid fa-arrow-right text-amberYellow"></i>
+                    </div>
+                </div>
+
+                <!-- Card 2: Slate Grey Border -->
+                <div class="bg-white p-7 rounded-none border-l-4 border-slateGrey border-t border-r border-b border-cementGrey/30 hover:border-r-cementGrey/60 transition-all flex flex-col justify-between">
+                    <div>
+                        <div class="flex items-center justify-between mb-4">
+                            <span class="text-[11px] font-mono font-bold text-slateGrey border border-slateGrey/30 px-2.5 py-1">Obras en marcha</span>
+                            <i class="fa-solid fa-magnifying-glass-dollar text-slateGrey text-lg"></i>
+                        </div>
+                        <h3 class="text-lg font-bold text-slateGrey mb-2">Auditoría &amp; Sobrecostos</h3>
+                        <p class="text-charcoalGrey/90 text-sm leading-relaxed">
+                            Diagnóstico expreso de desviaciones en proyectos activos. Reestructuración de cronogramas y renegociación técnica de cómputos.
+                        </p>
+                    </div>
+                    <div class="mt-6 pt-4 border-t border-cementGrey/20 text-xs font-mono font-semibold text-slateGrey flex items-center justify-between">
+                        <span>Diagnóstico 14 Días</span>
+                        <i class="fa-solid fa-arrow-right text-slateGrey"></i>
+                    </div>
+                </div>
+
+                <!-- Card 3: Mint Turquoise Border -->
+                <div class="bg-white p-7 rounded-none border-l-4 border-mintTurquoise border-t border-r border-b border-cementGrey/30 hover:border-r-cementGrey/60 transition-all flex flex-col justify-between">
+                    <div>
+                        <div class="flex items-center justify-between mb-4">
+                            <span class="text-[11px] font-mono font-bold text-mintTurquoise border border-mintTurquoise/30 px-2.5 py-1">BIM 3D / 4D / 5D</span>
+                            <i class="fa-solid fa-cubes text-mintTurquoise text-lg"></i>
+                        </div>
+                        <h3 class="text-lg font-bold text-slateGrey mb-2">BIM &amp; Interferencias</h3>
+                        <p class="text-charcoalGrey/90 text-sm leading-relaxed">
+                            Modelado detallado de arquitectura, estructuras e instalaciones MEP para la detección temprana de interferencias y reprocesos.
+                        </p>
+                    </div>
+                    <div class="mt-6 pt-4 border-t border-cementGrey/20 text-xs font-mono font-semibold text-slateGrey flex items-center justify-between">
+                        <span>Clash Detection</span>
+                        <i class="fa-solid fa-arrow-right text-mintTurquoise"></i>
+                    </div>
+                </div>
+
+                <!-- Card 4: Emerald Green Border -->
+                <div class="bg-white p-7 rounded-none border-l-4 border-emeraldGreen border-t border-r border-b border-cementGrey/30 hover:border-r-cementGrey/60 transition-all flex flex-col justify-between">
+                    <div>
+                        <div class="flex items-center justify-between mb-4">
+                            <span class="text-[11px] font-mono font-bold text-emeraldGreen border border-emeraldGreen/30 px-2.5 py-1">Métricas EVM</span>
+                            <i class="fa-solid fa-chart-column text-emeraldGreen text-lg"></i>
+                        </div>
+                        <h3 class="text-lg font-bold text-slateGrey mb-2">Dashboards KPI EVM</h3>
+                        <p class="text-charcoalGrey/90 text-sm leading-relaxed">
+                            Tableros de control analíticos con métricas CPI/SPI en tiempo real para la toma de decisiones basada en datos matemáticos.
+                        </p>
+                    </div>
+                    <div class="mt-6 pt-4 border-t border-cementGrey/20 text-xs font-mono font-semibold text-slateGrey flex items-center justify-between">
+                        <span>Reportes 24/7</span>
+                        <i class="fa-solid fa-arrow-right text-emeraldGreen"></i>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- ZONA INTERACTIVA: SIMULADOR DE ROI Y TABLERO EVM (Strict 100% Pure White Background) -->
+    <section id="simulador" class="py-28 lg:py-36 bg-white text-charcoalGrey relative overflow-hidden bg-grid-pattern border-b border-cementGrey/30">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
             
-            <div class="text-center max-w-3xl mx-auto mb-14">
-                <span class="text-terracotta font-mono font-bold text-xs uppercase tracking-widest bg-terracotta/20 px-3 py-1 rounded border border-terracotta/30">Motor de Cálculo Financiero</span>
-                <h2 class="text-3xl sm:text-4xl font-extrabold text-white mt-3">Simulador de ROI &amp; Control EVM</h2>
-                <p class="text-slate-400 text-base mt-2">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <span class="text-terracotta font-mono font-bold text-xs uppercase tracking-widest border border-terracotta/40 px-3.5 py-1 bg-white">Motor de Cálculo Financiero // SIM-EVM</span>
+                <h2 class="text-3xl sm:text-4xl font-extrabold text-slateGrey mt-3">Simulador de ROI &amp; Control EVM</h2>
+                <p class="text-charcoalGrey/80 text-base mt-2">
                     Ajusta el presupuesto de tu obra y el nivel de desvío habitual para calcular la mitigación de riesgo y actualizar la Curva S en tiempo real.
                 </p>
             </div>
@@ -466,9 +545,9 @@
             <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
                 
                 <!-- LEFT COLUMN: CONTROLES Y RESULTADOS (5 Cols) -->
-                <div class="lg:col-span-5 bg-slate-800/90 p-6 sm:p-8 rounded-2xl border border-slate-700/80 shadow-2xl backdrop-blur-md">
+                <div class="lg:col-span-5 bg-white p-6 sm:p-8 rounded-none border border-cementGrey/40 shadow-none">
                     
-                    <h3 class="text-lg font-bold text-white mb-6 flex items-center gap-2 border-b border-slate-700 pb-3">
+                    <h3 class="text-lg font-bold text-slateGrey mb-6 flex items-center gap-2 border-b border-cementGrey/20 pb-3">
                         <i class="fa-solid fa-sliders text-terracotta"></i>
                         <span>Parámetros del Proyecto</span>
                     </h3>
@@ -476,11 +555,11 @@
                     <!-- Slider 1: Presupuesto del Proyecto -->
                     <div class="mb-8">
                         <div class="flex justify-between items-center mb-2">
-                            <label for="budget-slider" class="text-xs font-mono text-slate-300 uppercase">Presupuesto del Proyecto (USD)</label>
+                            <label for="budget-slider" class="text-xs font-mono font-bold text-slateGrey uppercase">Presupuesto del Proyecto (USD)</label>
                             <span id="budget-value" class="text-lg font-extrabold font-mono text-amberYellow">$1,500,000</span>
                         </div>
                         <input id="budget-slider" type="range" min="100000" max="10000000" step="50000" value="1500000" class="w-full">
-                        <div class="flex justify-between text-[11px] font-mono text-slate-500 mt-1">
+                        <div class="flex justify-between text-[11px] font-mono text-cementGrey mt-1">
                             <span>$100K</span>
                             <span>$5M</span>
                             <span>$10M USD</span>
@@ -490,11 +569,11 @@
                     <!-- Slider 2: Desvío Estimado Tradicional -->
                     <div class="mb-8">
                         <div class="flex justify-between items-center mb-2">
-                            <label for="variance-slider" class="text-xs font-mono text-slate-300 uppercase">Desvío Tradicional Estimado</label>
+                            <label for="variance-slider" class="text-xs font-mono font-bold text-slateGrey uppercase">Desvío Tradicional Estimado</label>
                             <span id="variance-value" class="text-lg font-extrabold font-mono text-terracotta">15%</span>
                         </div>
                         <input id="variance-slider" type="range" min="0" max="50" step="1" value="15" class="w-full">
-                        <div class="flex justify-between text-[11px] font-mono text-slate-500 mt-1">
+                        <div class="flex justify-between text-[11px] font-mono text-cementGrey mt-1">
                             <span>0% (Ideal)</span>
                             <span>25%</span>
                             <span>50% (Crítico)</span>
@@ -505,31 +584,31 @@
                     <div class="space-y-4 pt-2">
                         
                         <!-- Box 1: Pérdida Tradicional -->
-                        <div class="bg-slate-900/80 p-4 rounded-xl border border-terracotta/40 flex justify-between items-center">
+                        <div class="bg-white p-4 rounded-none border border-terracotta/40 flex justify-between items-center">
                             <div>
-                                <span class="text-xs font-mono text-slate-400 block">Pérdida Tradicional Estimada</span>
+                                <span class="text-xs font-mono text-slateGrey block">Pérdida Tradicional Estimada</span>
                                 <span class="text-xs text-terracotta font-medium">Sobreprecio sin control</span>
                             </div>
                             <span id="output-loss" class="text-xl sm:text-2xl font-extrabold font-mono text-terracotta">$225,000</span>
                         </div>
 
                         <!-- Box 2: Ahorro Optimia -->
-                        <div class="bg-slate-900/80 p-4 rounded-xl border border-emeraldGreen/50 flex justify-between items-center">
+                        <div class="bg-white p-4 rounded-none border border-emeraldGreen/50 flex justify-between items-center">
                             <div>
-                                <span class="text-xs font-mono text-slate-400 block">Ahorro Mitigado con OPTIMIA</span>
+                                <span class="text-xs font-mono text-slateGrey block">Ahorro Mitigado con OPTIMIA</span>
                                 <span class="text-xs text-emeraldGreen font-medium">Capacidad de ahorro (90%)</span>
                             </div>
                             <span id="output-savings" class="text-xl sm:text-2xl font-extrabold font-mono text-emeraldGreen">$202,500</span>
                         </div>
 
-                        <!-- Box 3: Factor ROI -->
-                        <div class="bg-gradient-to-r from-emeraldGreen/20 to-amberYellow/20 p-5 rounded-xl border border-amberYellow/40 text-center">
-                            <span class="text-xs font-mono uppercase text-slate-300 block mb-1">Retorno Est. de Inversión PMO</span>
+                        <!-- Box 3: Factor ROI (Terracotta & Amber Accent) -->
+                        <div class="bg-white p-6 rounded-none border-2 border-terracotta text-center">
+                            <span class="text-xs font-mono uppercase font-bold text-slateGrey block mb-1">Retorno Est. de Inversión PMO</span>
                             <div class="flex items-center justify-center gap-2">
-                                <span id="output-roi" class="text-4xl font-extrabold font-mono text-amberYellow">6.8x</span>
-                                <span class="text-xs font-semibold text-slate-300 text-left leading-tight">Factor<br>Multiplicador</span>
+                                <span id="output-roi" class="text-4xl font-extrabold font-mono text-terracotta">6.8x</span>
+                                <span class="text-xs font-semibold text-slateGrey text-left leading-tight">Factor<br>Multiplicador</span>
                             </div>
-                            <span id="output-fee-text" class="text-[11px] text-slate-400 block mt-2 font-mono">Honorarios PMO est.: $30,000 USD (2.0%)</span>
+                            <span id="output-fee-text" class="text-[11px] text-cementGrey block mt-2 font-mono">Honorarios PMO est.: $30,000 USD (2.0%)</span>
                         </div>
 
                     </div>
@@ -540,13 +619,13 @@
                 <div class="lg:col-span-7 space-y-6">
                     
                     <!-- Chart Container 1: Curva S -->
-                    <div class="bg-slate-800/90 p-6 rounded-2xl border border-slate-700/80 shadow-2xl backdrop-blur-md">
+                    <div class="bg-white p-6 rounded-none border border-cementGrey/40 shadow-none">
                         <div class="flex justify-between items-center mb-4">
-                            <h3 class="text-base font-bold text-white flex items-center gap-2">
+                            <h3 class="text-base font-bold text-slateGrey flex items-center gap-2">
                                 <i class="fa-solid fa-chart-line text-emeraldGreen"></i>
                                 <span>Curva S de Avance Físico de Obra</span>
                             </h3>
-                            <span class="text-[11px] font-mono text-slate-400 bg-slate-900 px-2 py-1 rounded border border-slate-700">Meses vs % Cumplimiento</span>
+                            <span class="text-[11px] font-mono text-cementGrey bg-white px-2 py-1 border border-cementGrey/30">Meses vs % Cumplimiento</span>
                         </div>
                         <div class="relative h-64 sm:h-72 w-full">
                             <canvas id="chart-scurve"></canvas>
@@ -554,13 +633,13 @@
                     </div>
 
                     <!-- Chart Container 2: Indicadores EVM -->
-                    <div class="bg-slate-800/90 p-6 rounded-2xl border border-slate-700/80 shadow-2xl backdrop-blur-md">
+                    <div class="bg-white p-6 rounded-none border border-cementGrey/40 shadow-none">
                         <div class="flex justify-between items-center mb-4">
-                            <h3 class="text-base font-bold text-white flex items-center gap-2">
+                            <h3 class="text-base font-bold text-slateGrey flex items-center gap-2">
                                 <i class="fa-solid fa-chart-bar text-mintTurquoise"></i>
                                 <span>Indicadores EVM de Eficiencia (CPI / SPI)</span>
                             </h3>
-                            <span class="text-[11px] font-mono text-slate-400 bg-slate-900 px-2 py-1 rounded border border-slate-700">Objetivo &ge; 1.0</span>
+                            <span class="text-[11px] font-mono text-cementGrey bg-white px-2 py-1 border border-cementGrey/30">Objetivo &ge; 1.0</span>
                         </div>
                         <div class="relative h-48 sm:h-56 w-full">
                             <canvas id="chart-evm"></canvas>
@@ -574,77 +653,100 @@
         </div>
     </section>
 
-    <!-- SECCIÓN METODOLOGÍA: CRONOLOGÍA DE CONTROL -->
-    <section id="metodologia" class="py-20 bg-white border-b border-cementGrey/20">
+    <!-- SECCIÓN METODOLOGÍA: CRONOLOGÍA DE CONTROL (Strict 100% Pure White Background) -->
+    <section id="metodologia" class="py-28 lg:py-36 bg-white border-b border-cementGrey/30 relative bg-grid-pattern">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             
-            <div class="text-center max-w-3xl mx-auto mb-16">
-                <span class="text-slateGrey font-mono font-bold text-xs uppercase tracking-widest bg-slate-100 px-3 py-1 rounded">Rigor Operativo</span>
+            <div class="text-center max-w-3xl mx-auto mb-20">
+                <span class="text-slateGrey font-mono font-bold text-xs uppercase tracking-widest border border-cementGrey/40 px-3.5 py-1 bg-white">Rigor Operativo // MET04</span>
                 <h2 class="text-3xl sm:text-4xl font-extrabold text-slateGrey mt-3">Metodología "Cronología de Control"</h2>
-                <p class="text-charcoalGrey/70 text-base mt-2">Cinco hitos secuenciales para garantizar que la obra se mantenga dentro del presupuesto y plazo original.</p>
+                <p class="text-charcoalGrey/80 text-base mt-2">Cinco hitos secuenciales para garantizar que la obra se mantenga dentro del presupuesto y plazo original.</p>
             </div>
 
             <!-- Timeline Grid / Stepper -->
             <div class="relative">
                 
                 <!-- Connector Line (Desktop) -->
-                <div class="hidden lg:block absolute top-1/2 left-0 right-0 h-1 bg-slate-200 -translate-y-6 z-0"></div>
-
-                <div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5 gap-6 relative z-10">
+                                <div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5 gap-6 relative z-10">
                     
                     <!-- Milestone 0 -->
-                    <div class="bg-white p-6 rounded-xl border border-cementGrey/30 shadow-sm relative group hover:border-terracotta transition-colors">
-                        <div class="w-10 h-10 rounded-full bg-slateGrey text-white font-mono font-bold flex items-center justify-center text-sm mb-4 group-hover:bg-terracotta transition-colors">
-                            H0
+                    <div class="bg-white p-6 rounded-none border-t-2 border-l border-r border-b border-cementGrey/30 hover:border-t-terracotta transition-colors group flex flex-col justify-between">
+                        <div>
+                            <div class="w-10 h-10 rounded-none bg-white border-2 border-slateGrey text-slateGrey font-mono font-bold flex items-center justify-center text-sm mb-4 group-hover:border-terracotta group-hover:text-terracotta transition-colors">
+                                H0
+                            </div>
+                            <h3 class="text-sm font-extrabold text-slateGrey mb-2">Hito 0 — Blindaje Inicial <span class="text-terracotta text-xs font-mono font-bold block mt-0.5">(Mes 0)</span></h3>
+                            <p class="text-charcoalGrey/90 text-xs leading-relaxed">
+                                Definición sin ambigüedades de lo que <strong>SE INCLUYE</strong> y <strong>SE EXCLUYE</strong> en el alcance técnico para evitar costos adicionales imprevistos.
+                            </p>
                         </div>
-                        <h3 class="text-base font-bold text-slateGrey mb-2">Blindaje de Alcance</h3>
-                        <p class="text-charcoalGrey/80 text-xs leading-relaxed">
-                            Análisis de factibilidad técnica y validación del máster plan financiero previo a la firma de contratos.
-                        </p>
+                        <div class="mt-4 pt-2 border-t border-cementGrey/20 text-[10px] font-mono text-terracotta font-semibold">
+                            Definición de Alcance
+                        </div>
                     </div>
 
                     <!-- Milestone 1 -->
-                    <div class="bg-white p-6 rounded-xl border border-cementGrey/30 shadow-sm relative group hover:border-mintTurquoise transition-colors">
-                        <div class="w-10 h-10 rounded-full bg-slateGrey text-white font-mono font-bold flex items-center justify-center text-sm mb-4 group-hover:bg-mintTurquoise transition-colors">
-                            H1
+                    <div class="bg-white p-6 rounded-none border-t-2 border-l border-r border-b border-cementGrey/30 hover:border-t-mintTurquoise transition-colors group flex flex-col justify-between">
+                        <div>
+                            <div class="w-10 h-10 rounded-none bg-white border-2 border-slateGrey text-slateGrey font-mono font-bold flex items-center justify-center text-sm mb-4 group-hover:border-mintTurquoise group-hover:text-mintTurquoise transition-colors">
+                                H1
+                            </div>
+                            <h3 class="text-sm font-extrabold text-slateGrey mb-2">Hito 1 — Planificación Financiera <span class="text-mintTurquoise text-xs font-mono font-bold block mt-0.5">(Mes 1 a 2)</span></h3>
+                            <p class="text-charcoalGrey/90 text-xs leading-relaxed">
+                                Congelamiento de costos, estimación de la Curva S y determinación de fechas límite antes de contratar.
+                            </p>
                         </div>
-                        <h3 class="text-base font-bold text-slateGrey mb-2">Construcción Digital</h3>
-                        <p class="text-charcoalGrey/80 text-xs leading-relaxed">
-                            Modelado BIM 4D/5D para simular el montaje y resolver incompatibilidades de ingeniería en oficina.
-                        </p>
+                        <div class="mt-4 pt-2 border-t border-cementGrey/20 text-[10px] font-mono text-mintTurquoise font-semibold">
+                            Curva S &amp; Costos
+                        </div>
                     </div>
 
                     <!-- Milestone 2 -->
-                    <div class="bg-white p-6 rounded-xl border border-cementGrey/30 shadow-sm relative group hover:border-amberYellow transition-colors">
-                        <div class="w-10 h-10 rounded-full bg-slateGrey text-white font-mono font-bold flex items-center justify-center text-sm mb-4 group-hover:bg-amberYellow transition-colors">
-                            H2
+                    <div class="bg-white p-6 rounded-none border-t-2 border-l border-r border-b border-cementGrey/30 hover:border-t-amberYellow transition-colors group flex flex-col justify-between">
+                        <div>
+                            <div class="w-10 h-10 rounded-none bg-white border-2 border-slateGrey text-slateGrey font-mono font-bold flex items-center justify-center text-sm mb-4 group-hover:border-amberYellow group-hover:text-amberYellow transition-colors">
+                                H2
+                            </div>
+                            <h3 class="text-sm font-extrabold text-slateGrey mb-2">Hito 2 — Acuerdos Blindados <span class="text-amberYellow text-xs font-mono font-bold block mt-0.5">(Mes 3)</span></h3>
+                            <p class="text-charcoalGrey/90 text-xs leading-relaxed">
+                                Procura estructurada y contratos de proveedores a suma alzada con penalizaciones explícitas por retrasos.
+                            </p>
                         </div>
-                        <h3 class="text-base font-bold text-slateGrey mb-2">Alineación Procura</h3>
-                        <p class="text-charcoalGrey/80 text-xs leading-relaxed">
-                            Contrataciones bajo modalidad Just-in-Time con homologación previa de capacidad técnica de subcontratistas.
-                        </p>
+                        <div class="mt-4 pt-2 border-t border-cementGrey/20 text-[10px] font-mono text-amberYellow font-semibold">
+                            Procura &amp; Suma Alzada
+                        </div>
                     </div>
 
                     <!-- Milestone 3 -->
-                    <div class="bg-white p-6 rounded-xl border border-cementGrey/30 shadow-sm relative group hover:border-emeraldGreen transition-colors">
-                        <div class="w-10 h-10 rounded-full bg-slateGrey text-white font-mono font-bold flex items-center justify-center text-sm mb-4 group-hover:bg-emeraldGreen transition-colors">
-                            H3
+                    <div class="bg-white p-6 rounded-none border-t-2 border-l border-r border-b border-cementGrey/30 hover:border-t-emeraldGreen transition-colors group flex flex-col justify-between">
+                        <div>
+                            <div class="w-10 h-10 rounded-none bg-white border-2 border-slateGrey text-slateGrey font-mono font-bold flex items-center justify-center text-sm mb-4 group-hover:border-emeraldGreen group-hover:text-emeraldGreen transition-colors">
+                                H3
+                            </div>
+                            <h3 class="text-sm font-extrabold text-slateGrey mb-2">Hito 3 — Control Matemático de Obra</h3>
+                            <p class="text-charcoalGrey/90 text-xs leading-relaxed">
+                                Tres tipos de seguimiento diario y matemático (físico, económico y proyecciones de flujo de caja) basados en el estándar EVM (CPI/SPI).
+                            </p>
                         </div>
-                        <h3 class="text-base font-bold text-slateGrey mb-2">Control por Datos</h3>
-                        <p class="text-charcoalGrey/80 text-xs leading-relaxed">
-                            Monitoreo de curva S y certificación semanal de avances físicos con mediciones analíticas de EVM.
-                        </p>
+                        <div class="mt-4 pt-2 border-t border-cementGrey/20 text-[10px] font-mono text-emeraldGreen font-semibold">
+                            EVM (CPI / SPI)
+                        </div>
                     </div>
 
                     <!-- Milestone 4 -->
-                    <div class="bg-white p-6 rounded-xl border border-cementGrey/30 shadow-sm relative group hover:border-slateGrey transition-colors">
-                        <div class="w-10 h-10 rounded-full bg-slateGrey text-white font-mono font-bold flex items-center justify-center text-sm mb-4">
-                            H4
+                    <div class="bg-white p-6 rounded-none border-t-2 border-l border-r border-b border-cementGrey/30 hover:border-t-slateGrey transition-colors group flex flex-col justify-between">
+                        <div>
+                            <div class="w-10 h-10 rounded-none bg-white border-2 border-slateGrey text-slateGrey font-mono font-bold flex items-center justify-center text-sm mb-4 group-hover:border-terracotta group-hover:text-terracotta transition-colors">
+                                H4
+                            </div>
+                            <h3 class="text-sm font-extrabold text-slateGrey mb-2">Hito 4 — Entrega Cero Detalles <span class="text-slateGrey text-xs font-mono font-bold block mt-0.5">(Mes N)</span></h3>
+                            <p class="text-charcoalGrey/90 text-xs leading-relaxed">
+                                Protocolo exhaustivo "Punch List Cero", comisionamiento a plena carga y cierres provisorios, administrativos y definitivos sin pendientes.
+                            </p>
                         </div>
-                        <h3 class="text-base font-bold text-slateGrey mb-2">Punch List Cero</h3>
-                        <p class="text-charcoalGrey/80 text-xs leading-relaxed">
-                            Cierre administrativo, recepciones provisorias y definitivas sin observaciones ni pendientes acumulados.
-                        </p>
+                        <div class="mt-4 pt-2 border-t border-cementGrey/20 text-[10px] font-mono text-slateGrey font-semibold">
+                            Punch List Cero
+                        </div>
                     </div>
 
                 </div>
@@ -653,65 +755,65 @@
         </div>
     </section>
 
-    <!-- SECCIÓN CASOS DE ÉXITO -->
-    <section class="py-20 bg-slate-50 border-b border-cementGrey/20">
+    <!-- SECCIÓN CASOS DE ÉXITO (Strict 100% Pure White Background) -->
+    <section class="py-28 lg:py-36 bg-white border-b border-cementGrey/30 relative bg-grid-pattern">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             
-            <div class="text-center max-w-3xl mx-auto mb-16">
-                <span class="text-emeraldGreen font-mono font-bold text-xs uppercase tracking-widest bg-emeraldGreen/10 px-3 py-1 rounded">Experiencia Comprobada</span>
+            <div class="text-center max-w-3xl mx-auto mb-20">
+                <span class="text-emeraldGreen font-mono font-bold text-xs uppercase tracking-widest border border-emeraldGreen/30 px-3.5 py-1 bg-white">Experiencia Comprobada // EXP05</span>
                 <h2 class="text-3xl sm:text-4xl font-extrabold text-slateGrey mt-3">Proyectos Emblemáticos en Mendoza</h2>
-                <p class="text-charcoalGrey/70 text-base mt-2">Casos reales de gerenciamiento e ingeniería de alto valor técnico y complejidad operativa.</p>
+                <p class="text-charcoalGrey/80 text-base mt-2">Casos reales de gerenciamiento e ingeniería de alto valor técnico y complejidad operativa.</p>
             </div>
 
             <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
                 
                 <!-- Panel 1 -->
-                <div class="bg-white p-8 rounded-2xl border border-cementGrey/30 shadow-sm flex flex-col justify-between hover:shadow-md transition-shadow">
+                <div class="bg-white p-8 rounded-none border-l-2 border-t border-r border-b border-cementGrey/30 flex flex-col justify-between hover:border-l-emeraldGreen transition-all">
                     <div>
-                        <div class="inline-block bg-slate-100 text-slateGrey text-xs font-mono font-bold px-3 py-1 rounded mb-4">
+                        <div class="inline-block bg-white border border-slateGrey/30 text-slateGrey text-xs font-mono font-bold px-3 py-1 mb-4">
                             Hospitality &amp; Turístico
                         </div>
                         <h3 class="text-xl font-bold text-slateGrey mb-2">Caso Potrerillos</h3>
-                        <p class="text-charcoalGrey/80 text-sm leading-relaxed mb-6">
+                        <p class="text-charcoalGrey/90 text-sm leading-relaxed mb-6">
                             Gerenciamiento integral de complejo turístico de alta gama. Control logístico riguroso en zona de montaña y optimización de flujos de acopio.
                         </p>
                     </div>
-                    <div class="border-t border-slate-100 pt-4 flex items-center justify-between text-xs font-mono">
-                        <span class="text-slateGrey/70">Desvío de Plazo</span>
+                    <div class="border-t border-cementGrey/20 pt-4 flex items-center justify-between text-xs font-mono">
+                        <span class="text-slateGrey">Desvío de Plazo</span>
                         <span class="text-emeraldGreen font-bold font-mono">0 Días (On-Time)</span>
                     </div>
                 </div>
 
                 <!-- Panel 2 -->
-                <div class="bg-white p-8 rounded-2xl border border-cementGrey/30 shadow-sm flex flex-col justify-between hover:shadow-md transition-shadow">
+                <div class="bg-white p-8 rounded-none border-l-2 border-t border-r border-b border-cementGrey/30 flex flex-col justify-between hover:border-l-emeraldGreen transition-all">
                     <div>
-                        <div class="inline-block bg-slate-100 text-slateGrey text-xs font-mono font-bold px-3 py-1 rounded mb-4">
+                        <div class="inline-block bg-white border border-slateGrey/30 text-slateGrey text-xs font-mono font-bold px-3 py-1 mb-4">
                             Ingeniería Compleja
                         </div>
                         <h3 class="text-xl font-bold text-slateGrey mb-2">Caso Cheval Des Andes</h3>
-                        <p class="text-charcoalGrey/80 text-sm leading-relaxed mb-6">
+                        <p class="text-charcoalGrey/90 text-sm leading-relaxed mb-6">
                             Coordinación de envolventes térmicas e instalaciones de precisión para bodega boutique con altos estándares de conservación arquitectónica.
                         </p>
                     </div>
-                    <div class="border-t border-slate-100 pt-4 flex items-center justify-between text-xs font-mono">
-                        <span class="text-slateGrey/70">Ahorro en Presupuesto</span>
+                    <div class="border-t border-cementGrey/20 pt-4 flex items-center justify-between text-xs font-mono">
+                        <span class="text-slateGrey">Ahorro en Presupuesto</span>
                         <span class="text-emeraldGreen font-bold font-mono">11.4% Mitigado</span>
                     </div>
                 </div>
 
                 <!-- Panel 3 -->
-                <div class="bg-white p-8 rounded-2xl border border-cementGrey/30 shadow-sm flex flex-col justify-between hover:shadow-md transition-shadow">
+                <div class="bg-white p-8 rounded-none border-l-2 border-t border-r border-b border-cementGrey/30 flex flex-col justify-between hover:border-l-emeraldGreen transition-all">
                     <div>
-                        <div class="inline-block bg-slate-100 text-slateGrey text-xs font-mono font-bold px-3 py-1 rounded mb-4">
+                        <div class="inline-block bg-white border border-slateGrey/30 text-slateGrey text-xs font-mono font-bold px-3 py-1 mb-4">
                             Infraestructura &amp; Escala
                         </div>
                         <h3 class="text-xl font-bold text-slateGrey mb-2">Obras de Gran Envergadura</h3>
-                        <p class="text-charcoalGrey/80 text-sm leading-relaxed mb-6">
+                        <p class="text-charcoalGrey/90 text-sm leading-relaxed mb-6">
                             Control de proyectos industriales y desarrollos residenciales de escala con monitoreo BIM 5D y reportes EVM consolidados.
                         </p>
                     </div>
-                    <div class="border-t border-slate-100 pt-4 flex items-center justify-between text-xs font-mono">
-                        <span class="text-slateGrey/70">Métricas EVM</span>
+                    <div class="border-t border-cementGrey/20 pt-4 flex items-center justify-between text-xs font-mono">
+                        <span class="text-slateGrey">Métricas EVM</span>
                         <span class="text-emeraldGreen font-bold font-mono">CPI 1.00 Average</span>
                     </div>
                 </div>
@@ -721,61 +823,61 @@
         </div>
     </section>
 
-    <!-- SECCIÓN MODELOS DE CONTRATACIÓN -->
-    <section class="py-20 bg-white border-b border-cementGrey/20">
+    <!-- SECCIÓN MODELOS DE CONTRATACIÓN (Strict 100% Pure White Background) -->
+    <section class="py-28 lg:py-36 bg-white border-b border-cementGrey/30 relative bg-grid-pattern">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             
-            <div class="text-center max-w-3xl mx-auto mb-16">
-                <span class="text-terracotta font-mono font-bold text-xs uppercase tracking-widest bg-terracotta/10 px-3 py-1 rounded">Transparencia Comercial</span>
+            <div class="text-center max-w-3xl mx-auto mb-20">
+                <span class="text-terracotta font-mono font-bold text-xs uppercase tracking-widest border border-terracotta/30 px-3.5 py-1 bg-white">Transparencia Comercial // MOD06</span>
                 <h2 class="text-3xl sm:text-4xl font-extrabold text-slateGrey mt-3">Modelos de Contratación Flexibles</h2>
-                <p class="text-charcoalGrey/70 text-base mt-2">Nos adaptamos a la estructura de capital y requerimientos de gobernanza de cada cliente.</p>
+                <p class="text-charcoalGrey/80 text-base mt-2">Nos adaptamos a la estructura de capital y requerimientos de gobernanza de cada cliente.</p>
             </div>
 
             <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
                 
                 <!-- Modality 1 -->
-                <div class="bg-white p-8 rounded-2xl border border-cementGrey/30 shadow-sm hover:border-terracotta/60 transition-all flex flex-col justify-between">
+                <div class="bg-white p-8 rounded-none border-l-2 border-terracotta border-t border-r border-b border-cementGrey/30 hover:border-r-cementGrey/60 transition-all flex flex-col justify-between">
                     <div>
                         <div class="text-xs font-mono text-terracotta uppercase font-bold mb-2">Alineación Total de Intereses</div>
                         <h3 class="text-xl font-bold text-slateGrey mb-4">Fee Fijo + Incentive Fee</h3>
-                        <p class="text-charcoalGrey/80 text-sm leading-relaxed mb-6">
+                        <p class="text-charcoalGrey/90 text-sm leading-relaxed mb-6">
                             Un honorario base mensual predecible combinado con una bonificación por ahorro presupuestario y/o anticipación en la entrega de obra.
                         </p>
                     </div>
-                    <ul class="space-y-2 text-xs text-charcoalGrey/80 font-medium">
+                    <ul class="space-y-2.5 text-xs text-charcoalGrey font-medium border-t border-cementGrey/20 pt-4">
                         <li class="flex items-center gap-2"><i class="fa-solid fa-check text-emeraldGreen"></i> Incentivo a la eficiencia máxima</li>
                         <li class="flex items-center gap-2"><i class="fa-solid fa-check text-emeraldGreen"></i> Riesgo compartido con la PMO</li>
                     </ul>
                 </div>
 
-                <!-- Modality 2 -->
-                <div class="bg-slateGrey text-white p-8 rounded-2xl border border-slateGrey shadow-xl flex flex-col justify-between relative overflow-hidden">
-                    <div class="absolute top-0 right-0 bg-terracotta text-white text-[10px] font-mono font-bold px-3 py-1 rounded-bl-lg">
+                <!-- Modality 2 (Pure White Background, Thin Border Accent, Top Badge) -->
+                <div class="bg-white p-8 rounded-none border-l-4 border-slateGrey border-t border-r border-b border-cementGrey/40 flex flex-col justify-between relative">
+                    <div class="absolute top-0 right-0 bg-slateGrey text-white text-[10px] font-mono font-bold px-3 py-1">
                         MÁS SOLICITADO
                     </div>
                     <div>
-                        <div class="text-xs font-mono text-amberYellow uppercase font-bold mb-2">Proporcional al Proyecto</div>
-                        <h3 class="text-xl font-bold text-white mb-4">% sobre Costo Directo</h3>
-                        <p class="text-white/80 text-sm leading-relaxed mb-6">
+                        <div class="text-xs font-mono text-slateGrey uppercase font-bold mb-2">Proporcional al Proyecto</div>
+                        <h3 class="text-xl font-bold text-slateGrey mb-4">% sobre Costo Directo</h3>
+                        <p class="text-charcoalGrey/90 text-sm leading-relaxed mb-6">
                             Escala porcentual decreciente calculada sobre el costo directo certificado de la obra (rango del 1.5% al 2.5%).
                         </p>
                     </div>
-                    <ul class="space-y-2 text-xs text-white/80 font-medium">
-                        <li class="flex items-center gap-2"><i class="fa-solid fa-check text-amberYellow"></i> Previsibilidad presupuestaria total</li>
-                        <li class="flex items-center gap-2"><i class="fa-solid fa-check text-amberYellow"></i> Auditable mes a mes</li>
+                    <ul class="space-y-2.5 text-xs text-charcoalGrey font-medium border-t border-cementGrey/20 pt-4">
+                        <li class="flex items-center gap-2"><i class="fa-solid fa-check text-terracotta"></i> Previsibilidad presupuestaria total</li>
+                        <li class="flex items-center gap-2"><i class="fa-solid fa-check text-terracotta"></i> Auditable mes a mes</li>
                     </ul>
                 </div>
 
                 <!-- Modality 3 -->
-                <div class="bg-white p-8 rounded-2xl border border-cementGrey/30 shadow-sm hover:border-mintTurquoise/60 transition-all flex flex-col justify-between">
+                <div class="bg-white p-8 rounded-none border-l-2 border-mintTurquoise border-t border-r border-b border-cementGrey/30 hover:border-r-cementGrey/60 transition-all flex flex-col justify-between">
                     <div>
                         <div class="text-xs font-mono text-mintTurquoise uppercase font-bold mb-2">Para Diagnósticos Puntuales</div>
                         <h3 class="text-xl font-bold text-slateGrey mb-4">Módulos Cerrados por Hito</h3>
-                        <p class="text-charcoalGrey/80 text-sm leading-relaxed mb-6">
+                        <p class="text-charcoalGrey/90 text-sm leading-relaxed mb-6">
                             Contratación por entregables específicos (Ej: Auditoría de Sobrecostos en 14 días, Modelado BIM de Interferencias o Certificación de Avance).
                         </p>
                     </div>
-                    <ul class="space-y-2 text-xs text-charcoalGrey/80 font-medium">
+                    <ul class="space-y-2.5 text-xs text-charcoalGrey font-medium border-t border-cementGrey/20 pt-4">
                         <li class="flex items-center gap-2"><i class="fa-solid fa-check text-emeraldGreen"></i> Sin compromiso a largo plazo</li>
                         <li class="flex items-center gap-2"><i class="fa-solid fa-check text-emeraldGreen"></i> Entregables de alto impacto inmediato</li>
                     </ul>
@@ -786,8 +888,8 @@
         </div>
     </section>
 
-    <!-- SECCIÓN CONTACTO -->
-    <section id="contacto" class="py-20 bg-slate-900 text-white relative overflow-hidden bg-grid-dense">
+    <!-- SECCIÓN CONTACTO (Strict 100% Pure White Background) -->
+    <section id="contacto" class="py-28 lg:py-36 bg-white text-charcoalGrey relative overflow-hidden bg-grid-pattern border-b border-cementGrey/30">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
             
             <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
@@ -795,9 +897,9 @@
                 <!-- Direct Info Column (5 Cols) -->
                 <div class="lg:col-span-5 space-y-8">
                     <div>
-                        <span class="text-terracotta font-mono font-bold text-xs uppercase tracking-widest bg-terracotta/20 px-3 py-1 rounded border border-terracotta/30">Contacto Directo</span>
-                        <h2 class="text-3xl sm:text-4xl font-extrabold text-white mt-4">Inicia la Conversación Técnica</h2>
-                        <p class="text-slate-300 text-sm leading-relaxed mt-3">
+                        <span class="text-terracotta font-mono font-bold text-xs uppercase tracking-widest border border-terracotta/40 px-3.5 py-1 bg-white">Contacto Directo // CT07</span>
+                        <h2 class="text-3xl sm:text-4xl font-extrabold text-slateGrey mt-4">Inicia la Conversación Técnica</h2>
+                        <p class="text-charcoalGrey/80 text-sm leading-relaxed mt-3">
                             Agenda una reunión de evaluación sin costo para analizar los parámetros de tu proyecto y calcular la tasa de ahorro mitigable.
                         </p>
                     </div>
@@ -805,36 +907,36 @@
                     <div class="space-y-6">
                         
                         <!-- Executive Contact Box -->
-                        <div class="bg-slate-800/90 p-6 rounded-2xl border border-slate-700 flex items-start gap-4">
-                            <div class="w-12 h-12 rounded-full bg-terracotta/20 text-terracotta flex items-center justify-center text-xl shrink-0">
+                        <div class="bg-white p-6 rounded-none border border-cementGrey/40 flex items-start gap-4">
+                            <div class="w-12 h-12 rounded-none bg-white border border-terracotta/40 text-terracotta flex items-center justify-center text-xl shrink-0">
                                 <i class="fa-solid fa-user-gear"></i>
                             </div>
                             <div>
-                                <h4 class="text-base font-bold text-white">Adrián Manrique</h4>
-                                <p class="text-xs font-mono text-amberYellow mb-1">Director de PMO &amp; Process Engineering</p>
-                                <p class="text-xs text-slate-400">Mendoza, Argentina</p>
+                                <h4 class="text-base font-bold text-slateGrey">Adrián Manrique</h4>
+                                <p class="text-xs font-mono text-terracotta font-bold mb-1">Director de PMO &amp; Process Engineering</p>
+                                <p class="text-xs text-cementGrey font-mono">Mendoza, Argentina</p>
                             </div>
                         </div>
 
                         <!-- Email Box -->
-                        <a href="mailto:arq.adrianmanrique@gmail.com" class="bg-slate-800/90 p-5 rounded-2xl border border-slate-700 flex items-center gap-4 hover:border-terracotta transition-colors group">
-                            <div class="w-10 h-10 rounded-xl bg-emeraldGreen/20 text-emeraldGreen flex items-center justify-center text-lg shrink-0 group-hover:scale-110 transition-transform">
+                        <a href="mailto:arq.adrianmanrique@gmail.com" class="bg-white p-5 rounded-none border border-cementGrey/40 flex items-center gap-4 hover:border-terracotta transition-colors group">
+                            <div class="w-10 h-10 rounded-none bg-white border border-emeraldGreen/40 text-emeraldGreen flex items-center justify-center text-lg shrink-0 group-hover:scale-105 transition-transform">
                                 <i class="fa-solid fa-envelope"></i>
                             </div>
                             <div>
-                                <span class="text-xs font-mono text-slate-400 block">Correo Electrónico Corporativo</span>
-                                <span class="text-sm font-semibold text-white font-mono">arq.adrianmanrique@gmail.com</span>
+                                <span class="text-xs font-mono text-cementGrey block">Correo Electrónico Corporativo</span>
+                                <span class="text-sm font-semibold text-slateGrey font-mono">arq.adrianmanrique@gmail.com</span>
                             </div>
                         </a>
 
                         <!-- Location Badge -->
-                        <div class="bg-slate-800/90 p-5 rounded-2xl border border-slate-700 flex items-center gap-4">
-                            <div class="w-10 h-10 rounded-xl bg-mintTurquoise/20 text-mintTurquoise flex items-center justify-center text-lg shrink-0">
+                        <div class="bg-white p-5 rounded-none border border-cementGrey/40 flex items-center gap-4">
+                            <div class="w-10 h-10 rounded-none bg-white border border-mintTurquoise/40 text-mintTurquoise flex items-center justify-center text-lg shrink-0">
                                 <i class="fa-solid fa-location-dot"></i>
                             </div>
                             <div>
-                                <span class="text-xs font-mono text-slate-400 block">Sede Operativa</span>
-                                <span class="text-sm font-semibold text-white">Mendoza, Argentina (Cobertura Regional)</span>
+                                <span class="text-xs font-mono text-cementGrey block">Sede Operativa</span>
+                                <span class="text-sm font-semibold text-slateGrey">Mendoza, Argentina (Cobertura Regional)</span>
                             </div>
                         </div>
 
@@ -842,42 +944,42 @@
                 </div>
 
                 <!-- Form Column (7 Cols) -->
-                <div class="lg:col-span-7 bg-slate-800/95 p-8 sm:p-10 rounded-2xl border border-slate-700 shadow-2xl backdrop-blur-md relative">
+                <div class="lg:col-span-7 bg-white p-8 sm:p-10 rounded-none border border-cementGrey/40 relative">
                     
-                    <h3 class="text-xl font-bold text-white mb-2">Solicitar Auditoría de Previsibilidad</h3>
-                    <p class="text-slate-400 text-xs mb-8">Completa el formulario y un especialista senior analizará la estructura de tu obra.</p>
+                    <h3 class="text-xl font-bold text-slateGrey mb-2">Solicitar Auditoría de Previsibilidad</h3>
+                    <p class="text-charcoalGrey/80 text-xs mb-8">Completa el formulario y un especialista senior analizará la estructura de tu obra.</p>
 
-                    <!-- Contact Form -->
+                    <!-- Contact Form (Pure White Input Fields with Cement Borders) -->
                     <form id="contact-form" onsubmit="handleFormSubmit(event)" class="space-y-5">
                         
                         <div class="grid grid-cols-1 sm:grid-cols-2 gap-5">
                             <div>
-                                <label for="name" class="block text-xs font-mono text-slate-300 uppercase mb-1.5">Nombre Completo *</label>
-                                <input type="text" id="name" required class="w-full bg-slate-900 border border-slate-700 rounded-lg px-4 py-3 text-white text-sm focus:outline-none focus:border-terracotta transition-colors" placeholder="Ej: Arq. Marcelo Rossi">
+                                <label for="name" class="block text-xs font-mono font-bold text-slateGrey uppercase mb-1.5">Nombre Completo *</label>
+                                <input type="text" id="name" required class="w-full bg-white border border-cementGrey/40 rounded-none px-4 py-3 text-charcoalGrey text-sm focus:outline-none focus:border-terracotta transition-colors placeholder:text-cementGrey/60" placeholder="Ej: Arq. Marcelo Rossi">
                             </div>
                             <div>
-                                <label for="email" class="block text-xs font-mono text-slate-300 uppercase mb-1.5">Correo Electrónico *</label>
-                                <input type="email" id="email" required class="w-full bg-slate-900 border border-slate-700 rounded-lg px-4 py-3 text-white text-sm focus:outline-none focus:border-terracotta transition-colors" placeholder="ejemplo@empresa.com">
+                                <label for="email" class="block text-xs font-mono font-bold text-slateGrey uppercase mb-1.5">Correo Electrónico *</label>
+                                <input type="email" id="email" required class="w-full bg-white border border-cementGrey/40 rounded-none px-4 py-3 text-charcoalGrey text-sm focus:outline-none focus:border-terracotta transition-colors placeholder:text-cementGrey/60" placeholder="ejemplo@empresa.com">
                             </div>
                         </div>
 
                         <div class="grid grid-cols-1 sm:grid-cols-2 gap-5">
                             <div>
-                                <label for="company" class="block text-xs font-mono text-slate-300 uppercase mb-1.5">Empresa / Desarrolladora</label>
-                                <input type="text" id="company" class="w-full bg-slate-900 border border-slate-700 rounded-lg px-4 py-3 text-white text-sm focus:outline-none focus:border-terracotta transition-colors" placeholder="Nombre de la firma">
+                                <label for="company" class="block text-xs font-mono font-bold text-slateGrey uppercase mb-1.5">Empresa / Desarrolladora</label>
+                                <input type="text" id="company" class="w-full bg-white border border-cementGrey/40 rounded-none px-4 py-3 text-charcoalGrey text-sm focus:outline-none focus:border-terracotta transition-colors placeholder:text-cementGrey/60" placeholder="Nombre de la firma">
                             </div>
                             <div>
-                                <label for="phone" class="block text-xs font-mono text-slate-300 uppercase mb-1.5">Teléfono / WhatsApp *</label>
-                                <input type="tel" id="phone" required class="w-full bg-slate-900 border border-slate-700 rounded-lg px-4 py-3 text-white text-sm focus:outline-none focus:border-terracotta transition-colors" placeholder="+54 9 261 ...">
+                                <label for="phone" class="block text-xs font-mono font-bold text-slateGrey uppercase mb-1.5">Teléfono / WhatsApp *</label>
+                                <input type="tel" id="phone" required class="w-full bg-white border border-cementGrey/40 rounded-none px-4 py-3 text-charcoalGrey text-sm focus:outline-none focus:border-terracotta transition-colors placeholder:text-cementGrey/60" placeholder="+54 9 261 ...">
                             </div>
                         </div>
 
                         <div>
-                            <label for="message" class="block text-xs font-mono text-slate-300 uppercase mb-1.5">Detalles del Proyecto / Mensaje *</label>
-                            <textarea id="message" rows="4" required class="w-full bg-slate-900 border border-slate-700 rounded-lg px-4 py-3 text-white text-sm focus:outline-none focus:border-terracotta transition-colors" placeholder="Describe brevemente el tipo de obra, metros cuadrados aproximados y ubicación..."></textarea>
+                            <label for="message" class="block text-xs font-mono font-bold text-slateGrey uppercase mb-1.5">Detalles del Proyecto / Mensaje *</label>
+                            <textarea id="message" rows="4" required class="w-full bg-white border border-cementGrey/40 rounded-none px-4 py-3 text-charcoalGrey text-sm focus:outline-none focus:border-terracotta transition-colors placeholder:text-cementGrey/60" placeholder="Describe brevemente el tipo de obra, metros cuadrados aproximados y ubicación..."></textarea>
                         </div>
 
-                        <button type="submit" class="w-full bg-terracotta hover:bg-[#b04b21] text-white py-4 rounded-xl font-bold text-sm shadow-lg shadow-terracotta/20 transition-all flex items-center justify-center gap-2">
+                        <button type="submit" class="w-full bg-terracotta hover:bg-[#a84920] text-white py-4 rounded-none font-mono font-bold text-xs uppercase tracking-wider transition-all flex items-center justify-center gap-2">
                             <i class="fa-solid fa-paper-plane"></i>
                             <span>Enviar Solicitud de Auditoría</span>
                         </button>
@@ -885,14 +987,14 @@
 
                     <!-- Success Message Box (Hidden by default) -->
                     <div id="contact-success" class="hidden text-center py-10 space-y-4">
-                        <div class="w-16 h-16 rounded-full bg-emeraldGreen/20 text-emeraldGreen flex items-center justify-center text-3xl mx-auto">
+                        <div class="w-16 h-16 rounded-none bg-white border-2 border-emeraldGreen text-emeraldGreen flex items-center justify-center text-3xl mx-auto">
                             <i class="fa-solid fa-circle-check"></i>
                         </div>
-                        <h4 class="text-2xl font-bold text-white">¡Solicitud Recibida con Éxito!</h4>
-                        <p class="text-slate-300 text-sm max-w-md mx-auto">
-                            Gracias por contactar a <strong class="text-white">OPTIMIA PMO</strong>. El Director de PMO revisará los parámetros de tu proyecto y se comunicará en un plazo máximo de 24 horas hábiles.
+                        <h4 class="text-2xl font-bold text-slateGrey">¡Solicitud Recibida con Éxito!</h4>
+                        <p class="text-charcoalGrey/80 text-sm max-w-md mx-auto">
+                            Gracias por contactar a <strong class="text-slateGrey">OPTIMIA PMO</strong>. El Director de PMO revisará los parámetros de tu proyecto y se comunicará en un plazo máximo de 24 horas hábiles.
                         </p>
-                        <button onclick="resetContactForm()" class="bg-slate-700 hover:bg-slate-600 text-white px-6 py-2.5 rounded-lg text-xs font-mono uppercase font-semibold transition-colors mt-4">
+                        <button onclick="resetContactForm()" class="bg-white border border-slateGrey text-slateGrey hover:border-terracotta hover:text-terracotta px-6 py-2.5 rounded-none text-xs font-mono uppercase font-bold transition-colors mt-4">
                             Enviar otra consulta
                         </button>
                     </div>
@@ -904,17 +1006,17 @@
         </div>
     </section>
 
-    <!-- FOOTER -->
-    <footer class="bg-slate-950 text-slate-400 text-xs py-10 border-t border-slate-800">
+    <!-- FOOTER (Strict Pure White Background) -->
+    <footer class="bg-white text-charcoalGrey text-xs py-12 border-t border-cementGrey/40">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col sm:flex-row items-center justify-between gap-4">
             
             <div class="flex items-center gap-3">
-                <span class="font-mono font-bold text-white text-sm">OPTIMIA PMO</span>
-                <span class="text-slate-600">|</span>
-                <span>Ingeniería de Procesos &amp; Gerenciamiento Eficiente</span>
+                <span class="font-mono font-extrabold text-slateGrey text-sm">OPTIMIA<span class="text-terracotta">.</span>PMO</span>
+                <span class="text-cementGrey">|</span>
+                <span class="text-charcoalGrey/80">Ingeniería de Procesos &amp; Gerenciamiento Eficiente</span>
             </div>
 
-            <div class="font-mono text-slate-500">
+            <div class="font-mono text-cementGrey text-[11px]">
                 &copy; <span id="year-copy">2026</span> OPTIMIA PMO. Todos los derechos reservados. Mendoza, Argentina.
             </div>
 

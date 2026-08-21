@@ -12,15 +12,15 @@ export function setupTabs() {
         if (!btnDevs || !btnPymes || !contentDevs || !contentPymes) return;
 
         if (tabKey === 'devs') {
-            btnDevs.className = 'flex-1 py-3 px-4 rounded-lg font-semibold text-sm transition-all text-center flex items-center justify-center gap-2 bg-slateGrey text-white shadow-sm';
-            btnPymes.className = 'flex-1 py-3 px-4 rounded-lg font-semibold text-sm transition-all text-center flex items-center justify-center gap-2 text-slateGrey hover:bg-slate-100';
+            btnDevs.className = 'flex-1 py-3 px-4 rounded-md font-bold text-sm transition-all text-center flex items-center justify-center gap-2 bg-slateGrey text-white shadow-sm border border-slateGrey';
+            btnPymes.className = 'flex-1 py-3 px-4 rounded-md font-medium text-sm transition-all text-center flex items-center justify-center gap-2 text-slateGrey hover:text-terracotta bg-white border border-cementGrey/30';
             contentDevs.classList.remove('hidden');
             contentPymes.classList.add('hidden');
         } else {
-            btnPymes.className = 'flex-1 py-3 px-4 rounded-lg font-semibold text-sm transition-all text-center flex items-center justify-center gap-2 bg-slateGrey text-white shadow-sm';
-            btnDevs.className = 'flex-1 py-3 px-4 rounded-lg font-semibold text-sm transition-all text-center flex items-center justify-center gap-2 text-slateGrey hover:bg-slate-100';
-            contentPymes.classList.remove('hidden');
+            btnPymes.className = 'flex-1 py-3 px-4 rounded-md font-bold text-sm transition-all text-center flex items-center justify-center gap-2 bg-slateGrey text-white shadow-sm border border-slateGrey';
+            btnDevs.className = 'flex-1 py-3 px-4 rounded-md font-medium text-sm transition-all text-center flex items-center justify-center gap-2 text-slateGrey hover:text-terracotta bg-white border border-cementGrey/30';
             contentDevs.classList.add('hidden');
+            contentPymes.classList.remove('hidden');
         }
     };
 }

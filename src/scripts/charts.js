@@ -52,15 +52,15 @@ export function initCharts(ChartClass = window.Chart) {
                 maintainAspectRatio: false,
                 scales: {
                     x: {
-                        grid: { color: 'rgba(255, 255, 255, 0.05)' },
-                        ticks: { color: '#94A3B8', font: { family: 'JetBrains Mono', size: 11 } }
+                        grid: { color: 'rgba(165, 166, 146, 0.2)' },
+                        ticks: { color: '#41495E', font: { family: 'JetBrains Mono', size: 11 } }
                     },
                     y: {
                         min: 0,
                         max: 100,
-                        grid: { color: 'rgba(255, 255, 255, 0.08)' },
+                        grid: { color: 'rgba(165, 166, 146, 0.2)' },
                         ticks: { 
-                            color: '#94A3B8', 
+                            color: '#41495E', 
                             font: { family: 'JetBrains Mono', size: 11 },
                             callback: function(val) { return val + '%'; }
                         }
@@ -68,7 +68,7 @@ export function initCharts(ChartClass = window.Chart) {
                 },
                 plugins: {
                     legend: {
-                        labels: { color: '#E2E8F0', font: { family: 'Inter', size: 11 } }
+                        labels: { color: '#41495E', font: { family: 'Inter', size: 11, weight: '600' } }
                     },
                     tooltip: {
                         callbacks: {
@@ -92,13 +92,13 @@ export function initCharts(ChartClass = window.Chart) {
                         label: 'Gestión Tradicional',
                         data: [0.87, 0.89],
                         backgroundColor: '#C3582B',
-                        borderRadius: 6
+                        borderRadius: 4
                     },
                     {
                         label: 'OPTIMIA PMO',
                         data: [0.99, 1.01],
                         backgroundColor: '#3F6352',
-                        borderRadius: 6
+                        borderRadius: 4
                     }
                 ]
             },
@@ -108,18 +108,18 @@ export function initCharts(ChartClass = window.Chart) {
                 scales: {
                     x: {
                         grid: { display: false },
-                        ticks: { color: '#E2E8F0', font: { family: 'Inter', size: 11, weight: 'bold' } }
+                        ticks: { color: '#41495E', font: { family: 'Inter', size: 11, weight: 'bold' } }
                     },
                     y: {
                         min: 0.5,
                         max: 1.2,
-                        grid: { color: 'rgba(255, 255, 255, 0.08)' },
-                        ticks: { color: '#94A3B8', font: { family: 'JetBrains Mono', size: 11 } }
+                        grid: { color: 'rgba(165, 166, 146, 0.2)' },
+                        ticks: { color: '#41495E', font: { family: 'JetBrains Mono', size: 11 } }
                     }
                 },
                 plugins: {
                     legend: {
-                        labels: { color: '#E2E8F0', font: { family: 'Inter', size: 11 } }
+                        labels: { color: '#41495E', font: { family: 'Inter', size: 11, weight: '600' } }
                     }
                 }
             }
