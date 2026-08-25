@@ -11,7 +11,7 @@ export const CONFIG = {
     },
     SIMULATOR_DEFAULTS: {
         BUDGET: 1500000,
-        VARIANCE: 15,
+        VARIANCE: 35,
         SAVINGS_FACTOR: 0.90 // 90% risk mitigation capacity
     },
     FEE_TIERS: [
