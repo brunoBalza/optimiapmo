@@ -50,13 +50,19 @@ El diseño visual transmite rigor matemático, precisión de ingeniería y sobri
 
 | Token de Color | Valor HEX | Aplicación en Interfaz |
 | :--- | :--- | :--- |
-| **Slate Grey** | `#41495E` | Encabezados principales, barras de navegación y acentos estructurales. |
+| **Graphite Grey** | `#364448` | Títulos principales de sección (H2) en Gotham Black. |
+| **Slate Grey** | `#41495E` | Encabezados secundarios, barras de navegación y acentos estructurales. |
 | **Charcoal Grey** | `#2A3A3F` | Cuerpo de lectura y tipografía secundaria de alta legibilidad. |
 | **Terracotta** | `#C3582B` | Llamadas a la acción (CTA), desvíos financieros y sliders de riesgo. |
 | **Emerald Green** | `#3F6352` | Indicadores de ahorro mitigado, métricas óptimas y avance CPI/SPI. |
 | **Cement Grey** | `#A5A692` | Rejillas de fondo (Grid Pattern) y líneas guía de planos técnicos. |
 | **Mint Turquoise**| `#41BFB3` | Modelado BIM 5D, detección de interferencias y badges tecnológicos. |
 | **Amber Yellow** | `#EEBC21` | Retorno de inversión (ROI), hitos clave y componentes destacados. |
+
+### Estándares de Encabezados y Tipografía
+- **Títulos Principales (H2):** Formateados en `Gotham Black` / `Bold` (`font-gothamBlack font-bold`) utilizando el tono **Graphite Grey** (`#364448`).
+- **Subtítulos Descriptivos:** Formateados en `Gotham Light` (`font-gothamLight`) en tono **Graphite Grey** translúcido (`#364448/80`).
+- **Limpieza de Kickers / Badges:** Se remueven recuadros y etiquetas de categoría superiores (`span.text-terracotta...`) en secciones clave (ej. *Modelos de Contratación* y *Contacto*) para preservar la limpieza ejecutiva, el balance visual y el ritmo vertical.
 
 ---
 
@@ -143,6 +149,16 @@ $$\text{Factor ROI} = \frac{\text{Ahorro Mitigado}}{\text{Honorarios PMO}}$$
 - **Ubicación:** Mendoza, Argentina (Cobertura Regional e Internacional)
 - **Correo Electrónico:** [arq.adrianmanrique@gmail.com](mailto:arq.adrianmanrique@gmail.com)
 - **Especialidades:** Gerenciamiento PMO Integral, Auditoría de Sobrecostos, BIM 5D, Dashboards EVM.
+
+---
+
+## 📝 Historial de Revisiones & Refactorizaciones
+
+- **Refactorización de Encabezados de Sección (Modelos de Contratación & Contacto):**
+  - **Eliminación de Kickers:** Se eliminaron por completo las etiquetas superiores de categoría (`Transparencia Comercial // MOD06` y `Contacto Directo // CT07`).
+  - **Estandarización Tipográfica H2:** Se configuraron los títulos de sección en `Gotham Black` / `Bold` con color `#364448` (Gris Grafito).
+  - **Subtítulos Descriptivos:** Aplicación de `Gotham Light` (`font-gothamLight`) en `#364448/80`.
+  - **Balance de Espaciado:** Remoción del margen superior excedente (`mt-3`/`mt-4`) en el H2 tras la salida del badge, preservando la armonía y el ritmo vertical.
 
 ---
 
