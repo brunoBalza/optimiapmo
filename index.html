@@ -56,11 +56,11 @@
     <!-- NAVIGATION HEADER -->
     <header class="sticky top-0 z-50 bg-white border-b border-cementGrey/30 transition-all duration-300">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="flex items-center justify-between h-20 gap-4">
+            <div class="flex items-center justify-between h-20 md:h-24 gap-4 py-2">
                 
-                <!-- Logo Oficial OPTIMIA PMO (Exclusivamente la Imagen) -->
+                <!-- Logo Oficial OPTIMIA PMO (+35% Escala) -->
                 <a href="#" class="flex items-center group shrink-0">
-                    <img src="https://i.postimg.cc/mkxpJCVy/logo-optimia.webp" alt="OPTIMIA PMO Logo" class="h-12 w-auto object-contain transition-transform group-hover:scale-105">
+                    <img src="https://i.postimg.cc/mkxpJCVy/logo-optimia.webp" alt="OPTIMIA PMO Logo" class="h-16 md:h-[65px] w-auto object-contain transition-transform group-hover:scale-105">
                 </a>
 
                 <!-- Desktop Navigation Links (Gotham Light & Single Line) -->
@@ -109,23 +109,33 @@
     </header>
 
     <!-- HERO SECTION -->
-    <section class="relative bg-white py-20 lg:py-28 overflow-hidden border-b border-cementGrey/30">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-            <div class="max-w-4xl mx-auto text-center flex flex-col items-center">
+    <section id="hero" class="relative w-full min-h-screen flex flex-col justify-center py-16 md:py-24 lg:py-28 overflow-hidden border-b border-cementGrey/30">
+        <!-- Background Image (Full Viewport Cover) & Top Gradient Overlay -->
+        <img 
+            src="https://i.postimg.cc/J4m9MRz3/aparejo-traslucido.jpg" 
+            alt="Aparejo traslúcido fondo Hero Section" 
+            class="absolute inset-0 w-full h-full object-cover object-center pointer-events-none z-0"
+            loading="eager"
+            fetchpriority="high"
+        />
+        <div class="absolute inset-0 bg-gradient-to-b from-white/75 via-white/40 to-transparent pointer-events-none z-0"></div>
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 w-full">
+            <div class="max-w-4xl mx-auto text-center flex flex-col items-center justify-center">
                 
-                <!-- Imagen Corporativa Oficial Centrada y Jerarquizada -->
-                <div class="mb-8 p-2 bg-white border border-cementGrey/30 rounded-xl shadow-md max-w-sm sm:max-w-md w-full">
-                    <img src="https://i.postimg.cc/mkxpJCVy/logo-optimia.webp" alt="OPTIMIA PMO - Imagen Corporativa" class="w-full h-auto object-contain rounded-lg">
+                <!-- Logo Oficial OPTIMIA PMO Transparente (Floating Vector Asset) -->
+                <div class="mb-6 md:mb-8 max-w-md sm:max-w-xl lg:max-w-2xl w-full mx-auto bg-transparent">
+                    <img src="https://i.postimg.cc/mkxpJCVy/logo-optimia.webp" alt="OPTIMIA PMO - Imagen Corporativa" class="w-full h-auto object-contain drop-shadow-md">
                 </div>
 
-                <!-- Título Principal (Justo debajo de la imagen) -->
-                <h1 class="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-slateGrey tracking-tight leading-[1.2] mb-6">
-                    Eficiencia en Desarrollos Inmobiliarios - Sistematización de procesos
+                <!-- Título Principal (Encabezado H1) -->
+                <h1 class="text-3xl md:text-5xl lg:text-6xl font-gothamBlack font-black font-extrabold text-[#364448] tracking-tight leading-tight mb-4 max-w-4xl mx-auto">
+                    Protegemos la rentabilidad de su proyecto inmobiliario
                 </h1>
 
-                <!-- Promesa de Valor (Destacada visualmente en Terracota #C3582B) -->
-                <p class="text-xl sm:text-2xl font-bold text-terracotta leading-relaxed mb-10 max-w-3xl mx-auto">
-                    protegemos la rentabilidad de su proyecto inmobiliario
+                <!-- Subtítulo (Bajada Descriptiva con Mayor Grosor) -->
+                <p class="text-base md:text-lg lg:text-xl font-bold font-sans text-[#364448] tracking-normal leading-relaxed mb-8 max-w-3xl mx-auto">
+                    Eficiencia en desarrollos inmobiliarios - Sistematización de procesos
                 </p>
 
                 <!-- Hero Action Buttons -->
@@ -701,7 +711,7 @@
                             </div>
 
                             <div class="flex items-center justify-center my-3 pb-3 border-b border-cementGrey/20 min-h-[75px]">
-                                <img src="./icons/H0.svg" alt="Hito 0 — Blindaje Inicial" class="h-18 w-auto object-contain transition-transform group-hover:scale-105">
+                                <img src="https://i.postimg.cc/mPZ0gNQs/H0.png" alt="Hito 0 — Blindaje Inicial" loading="lazy" class="h-18 w-auto object-contain transition-transform group-hover:scale-105">
                             </div>
 
                             <h3 class="text-[#364448] font-gothamBold font-bold text-sm mb-1 leading-snug">Hito 0 — Blindaje Inicial</h3>
@@ -724,7 +734,7 @@
                             </div>
 
                             <div class="flex items-center justify-center my-3 pb-3 border-b border-cementGrey/20 min-h-[75px]">
-                                <img src="./icons/H1.svg" alt="Hito 1 — Planificación Financiera" class="h-18 w-auto object-contain transition-transform group-hover:scale-105">
+                                <img src="https://i.postimg.cc/TK2Z3qrX/H1.png" alt="Hito 1 — Planificación Financiera" loading="lazy" class="h-18 w-auto object-contain transition-transform group-hover:scale-105">
                             </div>
 
                             <h3 class="text-[#364448] font-gothamBold font-bold text-sm mb-1 leading-snug">Hito 1 — Planificación Financiera</h3>
@@ -747,7 +757,7 @@
                             </div>
 
                             <div class="flex items-center justify-center my-3 pb-3 border-b border-cementGrey/20 min-h-[75px]">
-                                <img src="./icons/H2.svg" alt="Hito 2 — Acuerdos Blindados" class="h-18 w-auto object-contain transition-transform group-hover:scale-105">
+                                <img src="https://i.postimg.cc/0z5LydpR/H2.png" alt="Hito 2 — Acuerdos Blindados" loading="lazy" class="h-18 w-auto object-contain transition-transform group-hover:scale-105">
                             </div>
 
                             <h3 class="text-[#364448] font-gothamBold font-bold text-sm mb-1 leading-snug">Hito 2 — Acuerdos Blindados</h3>
@@ -770,7 +780,7 @@
                             </div>
 
                             <div class="flex items-center justify-center my-3 pb-3 border-b border-cementGrey/20 min-h-[75px]">
-                                <img src="./icons/H3.svg" alt="Hito 3 — Control Matemático de Obra" class="h-18 w-auto object-contain transition-transform group-hover:scale-105">
+                                <img src="https://i.postimg.cc/gxcf2qvb/H3.png" alt="Hito 3 — Control Matemático de Obra" loading="lazy" class="h-18 w-auto object-contain transition-transform group-hover:scale-105">
                             </div>
 
                             <h3 class="text-[#364448] font-gothamBold font-bold text-sm mb-1 leading-snug">Hito 3 — Control Matemático de Obra</h3>
@@ -796,7 +806,7 @@
                             </div>
 
                             <div class="flex items-center justify-center my-3 pb-3 border-b border-cementGrey/20 min-h-[75px]">
-                                <img src="./icons/H4.svg" alt="Hito 4 — Entrega Cero Detalles" class="h-18 w-auto object-contain transition-transform group-hover:scale-105">
+                                <img src="https://i.postimg.cc/mPZ0gNQ2/H4.png" alt="Hito 4 — Entrega Cero Detalles" loading="lazy" class="h-18 w-auto object-contain transition-transform group-hover:scale-105">
                             </div>
 
                             <h3 class="text-[#364448] font-gothamBold font-bold text-sm mb-1 leading-snug">Hito 4 — Entrega Cero Detalles</h3>
@@ -979,7 +989,7 @@
                         </div>
 
                         <!-- Email Box -->
-                        <a href="mailto:arq.adrianmanrique@gmail.com" class="bg-white p-5 rounded-none border border-cementGrey/40 flex items-center gap-4 hover:border-terracotta transition-colors group">
+                        <a href="mailto:arq.adrianmanrique@gmail.com" aria-label="Enviar correo electrónico a Arq. Adrián Manrique" class="bg-white p-5 rounded-none border border-cementGrey/40 flex items-center gap-4 hover:border-terracotta transition-colors group">
                             <div class="w-10 h-10 rounded-none bg-white border border-emeraldGreen/40 text-emeraldGreen flex items-center justify-center text-lg shrink-0 group-hover:scale-105 transition-transform">
                                 <i class="fa-solid fa-envelope"></i>
                             </div>
@@ -1010,33 +1020,36 @@
                     <p class="text-charcoalGrey/80 text-xs mb-8">Completa el formulario y un especialista senior analizará la estructura de tu obra.</p>
 
                     <!-- Contact Form (Pure White Input Fields with Cement Borders) -->
-                    <form id="contact-form" onsubmit="handleFormSubmit(event)" class="space-y-5">
+                    <form id="contact-form" action="https://formsubmit.co/arq.adrianmanrique@gmail.com" method="POST" onsubmit="handleFormSubmit(event)" class="space-y-5">
+                        <input type="hidden" name="_captcha" value="false">
+                        <input type="hidden" name="_subject" value="Nueva Solicitud de Auditoría de Previsibilidad - OPTIMIA PMO">
+                        <input type="hidden" name="_to" value="arq.adrianmanrique@gmail.com">
                         
                         <div class="grid grid-cols-1 sm:grid-cols-2 gap-5">
                             <div>
                                 <label for="name" class="block text-xs font-mono font-bold text-slateGrey uppercase mb-1.5">Nombre Completo *</label>
-                                <input type="text" id="name" required class="w-full bg-white border border-cementGrey/40 rounded-none px-4 py-3 text-charcoalGrey text-sm focus:outline-none focus:border-terracotta transition-colors placeholder:text-cementGrey/60" placeholder="Ej: Arq. Marcelo Rossi">
+                                <input type="text" id="name" name="nombre" required class="w-full bg-white border border-cementGrey/40 rounded-none px-4 py-3 text-charcoalGrey text-sm focus:outline-none focus:border-terracotta transition-colors placeholder:text-cementGrey/60" placeholder="Ej: Arq. Marcelo Rossi">
                             </div>
                             <div>
                                 <label for="email" class="block text-xs font-mono font-bold text-slateGrey uppercase mb-1.5">Correo Electrónico *</label>
-                                <input type="email" id="email" required class="w-full bg-white border border-cementGrey/40 rounded-none px-4 py-3 text-charcoalGrey text-sm focus:outline-none focus:border-terracotta transition-colors placeholder:text-cementGrey/60" placeholder="ejemplo@empresa.com">
+                                <input type="email" id="email" name="email" required class="w-full bg-white border border-cementGrey/40 rounded-none px-4 py-3 text-charcoalGrey text-sm focus:outline-none focus:border-terracotta transition-colors placeholder:text-cementGrey/60" placeholder="ejemplo@empresa.com">
                             </div>
                         </div>
 
                         <div class="grid grid-cols-1 sm:grid-cols-2 gap-5">
                             <div>
                                 <label for="company" class="block text-xs font-mono font-bold text-slateGrey uppercase mb-1.5">Empresa / Desarrolladora</label>
-                                <input type="text" id="company" class="w-full bg-white border border-cementGrey/40 rounded-none px-4 py-3 text-charcoalGrey text-sm focus:outline-none focus:border-terracotta transition-colors placeholder:text-cementGrey/60" placeholder="Nombre de la firma">
+                                <input type="text" id="company" name="empresa" class="w-full bg-white border border-cementGrey/40 rounded-none px-4 py-3 text-charcoalGrey text-sm focus:outline-none focus:border-terracotta transition-colors placeholder:text-cementGrey/60" placeholder="Nombre de la firma">
                             </div>
                             <div>
                                 <label for="phone" class="block text-xs font-mono font-bold text-slateGrey uppercase mb-1.5">Teléfono / WhatsApp *</label>
-                                <input type="tel" id="phone" required class="w-full bg-white border border-cementGrey/40 rounded-none px-4 py-3 text-charcoalGrey text-sm focus:outline-none focus:border-terracotta transition-colors placeholder:text-cementGrey/60" placeholder="+54 9 261 ...">
+                                <input type="tel" id="phone" name="telefono" required class="w-full bg-white border border-cementGrey/40 rounded-none px-4 py-3 text-charcoalGrey text-sm focus:outline-none focus:border-terracotta transition-colors placeholder:text-cementGrey/60" placeholder="+54 9 261 ...">
                             </div>
                         </div>
 
                         <div>
                             <label for="message" class="block text-xs font-mono font-bold text-slateGrey uppercase mb-1.5">Detalles del Proyecto / Mensaje *</label>
-                            <textarea id="message" rows="4" required class="w-full bg-white border border-cementGrey/40 rounded-none px-4 py-3 text-charcoalGrey text-sm focus:outline-none focus:border-terracotta transition-colors placeholder:text-cementGrey/60" placeholder="Describe brevemente el tipo de obra, metros cuadrados aproximados y ubicación..."></textarea>
+                            <textarea id="message" name="mensaje" rows="4" required class="w-full bg-white border border-cementGrey/40 rounded-none px-4 py-3 text-charcoalGrey text-sm focus:outline-none focus:border-terracotta transition-colors placeholder:text-cementGrey/60" placeholder="Describe brevemente el tipo de obra, metros cuadrados aproximados y ubicación..."></textarea>
                         </div>
 
                         <button type="submit" class="w-full bg-terracotta hover:bg-[#a84920] text-white py-4 rounded-none font-mono font-bold text-xs uppercase tracking-wider transition-all flex items-center justify-center gap-2">
