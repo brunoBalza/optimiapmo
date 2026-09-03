@@ -1,7 +1,7 @@
 /**
  * OPTIMIA PMO - Main Application Orchestrator & Bootstrapper
  */
-import { setupNavigation } from './navigation.js';
+import { setupNavigation, setupScrollspy, SECTION_IDS } from './navigation.js';
 import { setupTabs } from './tabs.js';
 import { setupContactForm } from './form.js';
 import { calculateFinancialMetrics, formatUSD } from './simulator.js';
@@ -10,6 +10,7 @@ import { initCharts, updateCharts } from './charts.js';
 document.addEventListener('DOMContentLoaded', () => {
     // 1. Initialize UI Handlers
     setupNavigation();
+    setupScrollspy(SECTION_IDS);
     setupTabs();
     setupContactForm();
     initCharts();

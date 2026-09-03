@@ -39,6 +39,7 @@
                     fontFamily: {
                         sans: ['"Gotham Light"', 'Montserrat', 'Inter', 'sans-serif'],
                         gothamLight: ['"Gotham Light"', 'Montserrat', 'Inter', 'sans-serif'],
+                        gothamBold: ['"Gotham Bold"', 'Montserrat', 'Inter', 'sans-serif'],
                         gothamBlack: ['"Gotham Black"', 'Montserrat', 'Inter', 'sans-serif'],
                         mono: ['JetBrains Mono', 'monospace']
                     }
@@ -63,15 +64,16 @@
                     <img src="https://i.postimg.cc/mkxpJCVy/logo-optimia.webp" alt="OPTIMIA PMO Logo" class="h-16 md:h-[65px] w-auto object-contain transition-transform group-hover:scale-105">
                 </a>
 
-                <!-- Desktop Navigation Links (Gotham Light & Single Line) -->
-                <nav class="hidden md:flex items-center gap-6 lg:gap-8 text-xs font-gothamLight uppercase tracking-wider text-slateGrey whitespace-nowrap">
-                    <a href="#desafio" class="hover:text-terracotta transition-colors py-1 whitespace-nowrap">El Desafío</a>
-                    <a href="#propuesta" class="hover:text-terracotta transition-colors py-1 whitespace-nowrap">Propuesta</a>
-                    <a href="#comparativo" class="hover:text-terracotta transition-colors py-1 whitespace-nowrap">Diferenciales</a>
-                    <a href="#servicios" class="hover:text-terracotta transition-colors py-1 whitespace-nowrap">Servicios</a>
-                    <a href="#simulador" class="hover:text-terracotta transition-colors py-1 whitespace-nowrap">Simulador ROI</a>
-                    <a href="#metodologia" class="hover:text-terracotta transition-colors py-1 whitespace-nowrap">Metodología</a>
-                    <a href="#contacto" class="hover:text-terracotta transition-colors py-1 whitespace-nowrap">Contacto</a>
+                <!-- Desktop Navigation Links (Gotham Bold / Font-Bold & Single Line) -->
+                <nav class="hidden md:flex items-center gap-6 lg:gap-8 text-xs font-bold uppercase tracking-wider text-[#364448] whitespace-nowrap">
+                    <a href="#proyectos" class="nav-link hover:text-terracotta transition-all duration-200 py-1 border-b-2 border-transparent whitespace-nowrap">Proyectos</a>
+                    <a href="#desafio" class="nav-link hover:text-terracotta transition-all duration-200 py-1 border-b-2 border-transparent whitespace-nowrap">El Desafío</a>
+                    <a href="#propuesta" class="nav-link hover:text-terracotta transition-all duration-200 py-1 border-b-2 border-transparent whitespace-nowrap">Propuesta</a>
+                    <a href="#diferenciales" class="nav-link hover:text-terracotta transition-all duration-200 py-1 border-b-2 border-transparent whitespace-nowrap">Diferenciales</a>
+                    <a href="#servicios" class="nav-link hover:text-terracotta transition-all duration-200 py-1 border-b-2 border-transparent whitespace-nowrap">Servicios</a>
+                    <a href="#simulador" class="nav-link hover:text-terracotta transition-all duration-200 py-1 border-b-2 border-transparent whitespace-nowrap">Simulador ROI</a>
+                    <a href="#metodologia" class="nav-link hover:text-terracotta transition-all duration-200 py-1 border-b-2 border-transparent whitespace-nowrap">Metodología</a>
+                    <a href="#contacto" class="nav-link hover:text-terracotta transition-all duration-200 py-1 border-b-2 border-transparent whitespace-nowrap">Contacto</a>
                 </nav>
 
                 <!-- Header CTA Button (Gotham Black & Pure Text) -->
@@ -93,14 +95,15 @@
         </div>
 
         <!-- Mobile Navigation Menu -->
-        <div id="mobile-menu" class="hidden md:hidden bg-white border-b border-cementGrey/30 px-4 pt-3 pb-6 space-y-3 font-gothamLight">
-            <a href="#desafio" class="mobile-link block px-3 py-2 rounded-md text-base text-slateGrey hover:bg-slate-50 hover:text-terracotta whitespace-nowrap">El Desafío</a>
-            <a href="#propuesta" class="mobile-link block px-3 py-2 rounded-md text-base text-slateGrey hover:bg-slate-50 hover:text-terracotta whitespace-nowrap">Propuesta de Valor</a>
-            <a href="#comparativo" class="mobile-link block px-3 py-2 rounded-md text-base text-slateGrey hover:bg-slate-50 hover:text-terracotta whitespace-nowrap">Diferenciales</a>
-            <a href="#servicios" class="mobile-link block px-3 py-2 rounded-md text-base text-slateGrey hover:bg-slate-50 hover:text-terracotta whitespace-nowrap">Servicios</a>
-            <a href="#simulador" class="mobile-link block px-3 py-2 rounded-md text-base text-slateGrey hover:bg-slate-50 hover:text-terracotta whitespace-nowrap">Simulador ROI &amp; EVM</a>
-            <a href="#metodologia" class="mobile-link block px-3 py-2 rounded-md text-base text-slateGrey hover:bg-slate-50 hover:text-terracotta whitespace-nowrap">Metodología</a>
-            <a href="#contacto" class="mobile-link block px-3 py-2 rounded-md text-base text-slateGrey hover:bg-slate-50 hover:text-terracotta whitespace-nowrap">Contacto</a>
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-b border-cementGrey/30 px-4 pt-3 pb-6 space-y-3 font-bold">
+            <a href="#proyectos" class="mobile-link nav-link block px-3 py-2 rounded-md text-base text-[#364448] hover:bg-slate-50 hover:text-terracotta whitespace-nowrap">Proyectos Emblemáticos</a>
+            <a href="#desafio" class="mobile-link nav-link block px-3 py-2 rounded-md text-base text-[#364448] hover:bg-slate-50 hover:text-terracotta whitespace-nowrap">El Desafío</a>
+            <a href="#propuesta" class="mobile-link nav-link block px-3 py-2 rounded-md text-base text-[#364448] hover:bg-slate-50 hover:text-terracotta whitespace-nowrap">Propuesta de Valor</a>
+            <a href="#diferenciales" class="mobile-link nav-link block px-3 py-2 rounded-md text-base text-[#364448] hover:bg-slate-50 hover:text-terracotta whitespace-nowrap">Diferenciales</a>
+            <a href="#servicios" class="mobile-link nav-link block px-3 py-2 rounded-md text-base text-[#364448] hover:bg-slate-50 hover:text-terracotta whitespace-nowrap">Servicios</a>
+            <a href="#simulador" class="mobile-link nav-link block px-3 py-2 rounded-md text-base text-[#364448] hover:bg-slate-50 hover:text-terracotta whitespace-nowrap">Simulador ROI &amp; EVM</a>
+            <a href="#metodologia" class="mobile-link nav-link block px-3 py-2 rounded-md text-base text-[#364448] hover:bg-slate-50 hover:text-terracotta whitespace-nowrap">Metodología</a>
+            <a href="#contacto" class="mobile-link nav-link block px-3 py-2 rounded-md text-base text-[#364448] hover:bg-slate-50 hover:text-terracotta whitespace-nowrap">Contacto</a>
             <a href="#contacto" class="btn-cta-navbar mobile-link flex flex-col items-center justify-center w-full bg-[#C0613E] hover:bg-[#a84920] text-white px-4 py-2 rounded-lg font-gothamBlack text-center leading-tight mt-4 transition-all" aria-label="Auditoría de proyecto y factibilidad">
                 <span class="block text-xs uppercase tracking-wider">Auditoría de proyecto</span>
                 <span class="block text-sm font-bold">Factibilidad</span>
@@ -128,8 +131,8 @@
                     <img src="https://i.postimg.cc/mkxpJCVy/logo-optimia.webp" alt="OPTIMIA PMO - Imagen Corporativa" class="w-full h-auto object-contain drop-shadow-md">
                 </div>
 
-                <!-- Título Principal (Encabezado H1) -->
-                <h1 class="text-3xl md:text-5xl lg:text-6xl font-gothamBlack font-black font-extrabold text-[#364448] tracking-tight leading-tight mb-4 max-w-4xl mx-auto">
+                <!-- Título Principal (Encabezado H1 Responsive) -->
+                <h1 class="text-3xl md:text-5xl lg:text-6xl font-gothamBlack font-black font-extrabold text-white md:text-[#364448] tracking-tight text-center mb-4 max-w-4xl mx-auto drop-shadow-md" style="line-height: calc(1.25em + 0.5px); filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.4));">
                     Protegemos la rentabilidad de su proyecto inmobiliario
                 </h1>
 
@@ -143,9 +146,18 @@
                     <a href="#contacto" class="w-full sm:w-auto inline-flex items-center justify-center bg-terracotta hover:bg-[#a84920] text-white px-8 py-4 rounded-md text-xs font-gothamBlack uppercase tracking-wider shadow-sm transition-all whitespace-nowrap">
                         Auditoria de proyecto - Factibilidad
                     </a>
-                    <a href="#simulador" class="w-full sm:w-auto inline-flex items-center justify-center gap-2 bg-white hover:bg-slate-50 text-slateGrey border border-slateGrey/40 hover:border-terracotta hover:text-terracotta px-7 py-4 rounded-md text-xs font-gothamLight uppercase tracking-wider transition-all whitespace-nowrap">
+                    <a href="#simulador" class="w-full sm:w-auto inline-flex items-center justify-center gap-2 bg-white hover:bg-slate-50 text-slateGrey border border-slateGrey/40 hover:border-terracotta hover:text-terracotta px-7 py-4 rounded-md text-xs font-gothamBold font-bold uppercase tracking-wider transition-all whitespace-nowrap">
                         <i class="fa-solid fa-chart-line text-emeraldGreen"></i>
                         <span>Simular ROI de tu Proyecto</span>
+                    </a>
+                </div>
+
+                <!-- Secondary Hero CTA: Fideicomisos Inmobiliarios -->
+                <div class="mt-3.5 sm:mt-4 w-full flex items-center justify-center">
+                    <a href="#contacto" 
+                       aria-label="Ir a la sección de contacto para consultar sobre Fideicomisos Inmobiliarios" 
+                       class="inline-flex items-center justify-center px-6 py-2.5 rounded-md text-xs font-gothamBold font-bold text-[#364448] bg-white hover:bg-slate-50 border border-[#3A6150]/20 hover:border-[#3A6150]/40 shadow-md hover:shadow-lg transition-all duration-200 uppercase tracking-wider">
+                        Fideicomisos Inmobiliarios
                     </a>
                 </div>
 
@@ -174,6 +186,112 @@
                 </div>
 
             </div>
+        </div>
+    </section>
+
+    <!-- SECCIÓN PROYECTOS EMBLEMÁTICOS (Strict 100% Pure White Background) -->
+    <section id="proyectos" class="py-28 lg:py-36 bg-white border-b border-cementGrey/30 relative">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            
+            <div class="text-center max-w-3xl mx-auto mb-20">
+                <h2 class="text-3xl sm:text-4xl font-gothamBlack font-extrabold text-[#364448]">Proyectos Emblemáticos en Mendoza</h2>
+                <p class="text-[#364448]/80 font-gothamLight text-base mt-2">Casos reales de gerenciamiento e ingeniería de alto valor técnico y complejidad operativa.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                
+                <!-- Panel 1 -->
+                <div class="bg-white p-8 rounded-none border-l-2 border-t border-r border-b border-cementGrey/30 flex flex-col justify-between hover:border-l-emeraldGreen transition-all group">
+                    <div>
+                        <div class="inline-block bg-white border border-slateGrey/30 text-slateGrey text-xs font-mono font-bold px-3 py-1 mb-4">
+                            Hospitality &amp; Turístico
+                        </div>
+                        <h3 class="text-xl font-bold text-slateGrey mb-3">Caso Potrerillos</h3>
+                        
+                        <!-- Contenedor Fotográfico de Alta Gama (Responsive & Aspect Ratio Control) -->
+                        <div class="relative overflow-hidden rounded-md border border-cementGrey/30 mb-4 group/img bg-slate-100">
+                            <img 
+                                src="https://i.postimg.cc/bvRY8sMf/cabana-potrerillos.png" 
+                                alt="Complejo turístico de cabañas en Potrerillos, Mendoza - Gerenciamiento OPTIMIA PMO" 
+                                loading="lazy" 
+                                decoding="async" 
+                                referrerpolicy="no-referrer"
+                                class="w-full aspect-[16/10] object-cover object-center transition-all duration-500 ease-out group-hover:scale-105 group-hover/img:scale-105"
+                            >
+                        </div>
+
+                        <p class="text-charcoalGrey/90 text-sm leading-relaxed mb-6">
+                            Gerenciamiento integral de complejo turístico de alta gama. Control logístico riguroso en zona de montaña y optimización de flujos de acopio.
+                        </p>
+                    </div>
+                    <div class="border-t border-cementGrey/20 pt-4 flex items-center justify-between text-xs font-mono">
+                        <span class="text-slateGrey">Desvío de Plazo</span>
+                        <span class="text-emeraldGreen font-bold font-mono">0 Días (On-Time)</span>
+                    </div>
+                </div>
+
+                <!-- Panel 2 -->
+                <div class="bg-white p-8 rounded-none border-l-2 border-t border-r border-b border-cementGrey/30 flex flex-col justify-between hover:border-l-emeraldGreen transition-all group">
+                    <div>
+                        <div class="inline-block bg-white border border-slateGrey/30 text-slateGrey text-xs font-mono font-bold px-3 py-1 mb-4">
+                            Ingeniería Compleja
+                        </div>
+                        <h3 class="text-xl font-bold text-slateGrey mb-3">Caso Cheval Des Andes</h3>
+                        
+                        <!-- Contenedor Fotográfico de Alta Gama (Responsive & Aspect Ratio Control) -->
+                        <div class="relative overflow-hidden rounded-md border border-cementGrey/30 mb-4 group/img bg-slate-100">
+                            <img 
+                                src="https://i.postimg.cc/8Pqzb8WB/bodega-cheval.jpg" 
+                                alt="Bodega Boutique Cheval Des Andes - Optimia PMO" 
+                                loading="lazy" 
+                                decoding="async" 
+                                referrerpolicy="no-referrer" 
+                                class="w-full aspect-[16/10] object-cover object-center transition-all duration-500 ease-out group-hover:scale-105 group-hover/img:scale-105"
+                            >
+                        </div>
+
+                        <p class="text-charcoalGrey/90 text-sm leading-relaxed mb-6">
+                            Coordinación de envolventes térmicas e instalaciones de precisión para bodega boutique con altos estándares de conservación arquitectónica.
+                        </p>
+                    </div>
+                    <div class="border-t border-cementGrey/20 pt-4 flex items-center justify-between text-xs font-mono">
+                        <span class="text-slateGrey">Ahorro en Presupuesto</span>
+                        <span class="text-emeraldGreen font-bold font-mono">11.4% Mitigado</span>
+                    </div>
+                </div>
+
+                <!-- Panel 3 -->
+                <div class="bg-white p-8 rounded-none border-l-2 border-t border-r border-b border-cementGrey/30 flex flex-col justify-between hover:border-l-emeraldGreen transition-all group">
+                    <div>
+                        <div class="inline-block bg-white border border-slateGrey/30 text-slateGrey text-xs font-mono font-bold px-3 py-1 mb-4">
+                            Infraestructura &amp; Escala
+                        </div>
+                        <h3 class="text-xl font-bold text-slateGrey mb-3">Obras de Gran Envergadura</h3>
+                        
+                        <!-- Contenedor Fotográfico de Alta Gama (Responsive & Aspect Ratio Control) -->
+                        <div class="relative overflow-hidden rounded-md border border-cementGrey/30 mb-4 group/img bg-slate-100">
+                            <img 
+                                src="https://i.postimg.cc/ZqdZMxB0/nave-Industrial.jpg" 
+                                alt="Nave Industrial y Obras de Gran Envergadura - Optimia PMO" 
+                                loading="lazy" 
+                                decoding="async" 
+                                referrerpolicy="no-referrer" 
+                                class="w-full aspect-[16/10] object-cover object-center transition-all duration-500 ease-out group-hover:scale-105 group-hover/img:scale-105"
+                            >
+                        </div>
+
+                        <p class="text-charcoalGrey/90 text-sm leading-relaxed mb-6">
+                            Control de proyectos industriales y desarrollos residenciales de escala con monitoreo BIM 5D y reportes EVM consolidados.
+                        </p>
+                    </div>
+                    <div class="border-t border-cementGrey/20 pt-4 flex items-center justify-between text-xs font-mono">
+                        <span class="text-slateGrey">Métricas EVM</span>
+                        <span class="text-emeraldGreen font-bold font-mono">CPI 1.00 Average</span>
+                    </div>
+                </div>
+
+            </div>
+
         </div>
     </section>
 
@@ -312,7 +430,7 @@
     </section>
 
     <!-- SECCIÓN CUADRO COMPARATIVO DE DIFERENCIALES (Strict 100% Pure White Background) -->
-    <section id="comparativo" class="py-24 lg:py-32 bg-white border-b border-cementGrey/30 relative">
+    <section id="diferenciales" class="py-24 lg:py-32 bg-white border-b border-cementGrey/30 relative">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             
             <div class="text-center max-w-3xl mx-auto mb-16">
@@ -828,75 +946,8 @@
         </div>
     </section>
 
-    <!-- SECCIÓN CASOS DE ÉXITO (Strict 100% Pure White Background) -->
-    <section class="py-28 lg:py-36 bg-white border-b border-cementGrey/30 relative">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            
-            <div class="text-center max-w-3xl mx-auto mb-20">
-                <h2 class="text-3xl sm:text-4xl font-gothamBlack font-extrabold text-[#364448]">Proyectos Emblemáticos en Mendoza</h2>
-                <p class="text-[#364448]/80 font-gothamLight text-base mt-2">Casos reales de gerenciamiento e ingeniería de alto valor técnico y complejidad operativa.</p>
-            </div>
-
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-                
-                <!-- Panel 1 -->
-                <div class="bg-white p-8 rounded-none border-l-2 border-t border-r border-b border-cementGrey/30 flex flex-col justify-between hover:border-l-emeraldGreen transition-all">
-                    <div>
-                        <div class="inline-block bg-white border border-slateGrey/30 text-slateGrey text-xs font-mono font-bold px-3 py-1 mb-4">
-                            Hospitality &amp; Turístico
-                        </div>
-                        <h3 class="text-xl font-bold text-slateGrey mb-2">Caso Potrerillos</h3>
-                        <p class="text-charcoalGrey/90 text-sm leading-relaxed mb-6">
-                            Gerenciamiento integral de complejo turístico de alta gama. Control logístico riguroso en zona de montaña y optimización de flujos de acopio.
-                        </p>
-                    </div>
-                    <div class="border-t border-cementGrey/20 pt-4 flex items-center justify-between text-xs font-mono">
-                        <span class="text-slateGrey">Desvío de Plazo</span>
-                        <span class="text-emeraldGreen font-bold font-mono">0 Días (On-Time)</span>
-                    </div>
-                </div>
-
-                <!-- Panel 2 -->
-                <div class="bg-white p-8 rounded-none border-l-2 border-t border-r border-b border-cementGrey/30 flex flex-col justify-between hover:border-l-emeraldGreen transition-all">
-                    <div>
-                        <div class="inline-block bg-white border border-slateGrey/30 text-slateGrey text-xs font-mono font-bold px-3 py-1 mb-4">
-                            Ingeniería Compleja
-                        </div>
-                        <h3 class="text-xl font-bold text-slateGrey mb-2">Caso Cheval Des Andes</h3>
-                        <p class="text-charcoalGrey/90 text-sm leading-relaxed mb-6">
-                            Coordinación de envolventes térmicas e instalaciones de precisión para bodega boutique con altos estándares de conservación arquitectónica.
-                        </p>
-                    </div>
-                    <div class="border-t border-cementGrey/20 pt-4 flex items-center justify-between text-xs font-mono">
-                        <span class="text-slateGrey">Ahorro en Presupuesto</span>
-                        <span class="text-emeraldGreen font-bold font-mono">11.4% Mitigado</span>
-                    </div>
-                </div>
-
-                <!-- Panel 3 -->
-                <div class="bg-white p-8 rounded-none border-l-2 border-t border-r border-b border-cementGrey/30 flex flex-col justify-between hover:border-l-emeraldGreen transition-all">
-                    <div>
-                        <div class="inline-block bg-white border border-slateGrey/30 text-slateGrey text-xs font-mono font-bold px-3 py-1 mb-4">
-                            Infraestructura &amp; Escala
-                        </div>
-                        <h3 class="text-xl font-bold text-slateGrey mb-2">Obras de Gran Envergadura</h3>
-                        <p class="text-charcoalGrey/90 text-sm leading-relaxed mb-6">
-                            Control de proyectos industriales y desarrollos residenciales de escala con monitoreo BIM 5D y reportes EVM consolidados.
-                        </p>
-                    </div>
-                    <div class="border-t border-cementGrey/20 pt-4 flex items-center justify-between text-xs font-mono">
-                        <span class="text-slateGrey">Métricas EVM</span>
-                        <span class="text-emeraldGreen font-bold font-mono">CPI 1.00 Average</span>
-                    </div>
-                </div>
-
-            </div>
-
-        </div>
-    </section>
-
     <!-- SECCIÓN MODELOS DE CONTRATACIÓN (Strict 100% Pure White Background) -->
-    <section class="py-28 lg:py-36 bg-white border-b border-cementGrey/30 relative">
+    <section id="modelos" class="py-28 lg:py-36 bg-white border-b border-cementGrey/30 relative">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             
             <div class="text-center max-w-3xl mx-auto mb-20">
@@ -1095,6 +1146,19 @@
 
         </div>
     </footer>
+
+    <!-- Floating WhatsApp Action Button -->
+    <a 
+        href="https://wa.me/5492613469789" 
+        target="_blank" 
+        rel="noopener noreferrer" 
+        aria-label="Contacto directo por WhatsApp con la dirección técnica de Optimia PMO"
+        class="fixed bottom-6 right-6 z-50 flex items-center justify-center w-14 h-14 sm:w-16 sm:h-16 bg-[#25D366] hover:bg-[#20bd5a] text-white rounded-full shadow-[0_4px_20px_rgba(37,211,102,0.45)] hover:shadow-[0_6px_28px_rgba(37,211,102,0.65)] transition-all duration-300 ease-out hover:scale-110 active:scale-95 focus:outline-none focus:ring-4 focus:ring-[#25D366]/40"
+    >
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="32" height="32" fill="currentColor" class="w-7 h-7 sm:w-8 sm:h-8 text-white drop-shadow-sm">
+            <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/>
+        </svg>
+    </a>
 
     <!-- Main ES Module Entrypoint -->
     <script type="module" src="./src/scripts/main.js"></script>
